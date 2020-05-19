@@ -1,0 +1,31 @@
+﻿@model IEnumerable<ClaimSettlementViewModel>
+@foreach (var item in Model)
+{
+    <div class="container">
+        <div class="row">
+            <div class="col col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+                <div class="section-title-s2">
+                    <span>Hesablaşmalar</span>
+                    <h2>@item.Title</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col col-xs-12">
+                <div class="statement-grids clearfix">
+                    @foreach (var option in item.claimSettlementOptions)
+                    {
+                        <div class="grid">
+                            <div class="icon">
+                                <i class="@option.Logo"></i>
+                            </div>
+                            <h3>@option.Subtitle</h3>
+                            <p>@option.Text</p>
+                        </div>
+                    }
+
+                </div>
+            </div>
+        </div>
+    </div> <!-- end container -->
+}

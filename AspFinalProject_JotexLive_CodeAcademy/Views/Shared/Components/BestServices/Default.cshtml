@@ -1,0 +1,15 @@
+﻿@model IEnumerable<BestServicesViewModel>
+
+
+    <div class="services-grids clearfix">
+        @foreach (var item in Model)
+        {
+            <div class="grid">
+                <a href="@item.EndPoint">
+                    <i class="@item.Logo"></i>
+                    <h3>@item.Name</h3>
+                </a>
+            </div>
+        }
+
+    </div>

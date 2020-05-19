@@ -4888,11 +4888,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Administrator\\source\\repos\\AspFinalProject_JotexLive_CodeAcademy\\Repository\\Repository.csproj",
+      "projectUniqueName": "C:\\Users\\Administrator\\Desktop\\AspFinalProject_JotexLive_CodeAcademy\\Repository\\Repository.csproj",
       "projectName": "Repository",
-      "projectPath": "C:\\Users\\Administrator\\source\\repos\\AspFinalProject_JotexLive_CodeAcademy\\Repository\\Repository.csproj",
+      "projectPath": "C:\\Users\\Administrator\\Desktop\\AspFinalProject_JotexLive_CodeAcademy\\Repository\\Repository.csproj",
       "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Administrator\\source\\repos\\AspFinalProject_JotexLive_CodeAcademy\\Repository\\obj\\",
+      "outputPath": "C:\\Users\\Administrator\\Desktop\\AspFinalProject_JotexLive_CodeAcademy\\Repository\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

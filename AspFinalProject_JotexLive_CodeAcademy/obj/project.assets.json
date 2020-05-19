@@ -8202,11 +8202,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Administrator\\source\\repos\\AspFinalProject_JotexLive_CodeAcademy\\AspFinalProject_JotexLive_CodeAcademy\\AspFinalProject_JotexLive_CodeAcademy.csproj",
+      "projectUniqueName": "C:\\Users\\Administrator\\Desktop\\AspFinalProject_JotexLive_CodeAcademy\\AspFinalProject_JotexLive_CodeAcademy\\AspFinalProject_JotexLive_CodeAcademy.csproj",
       "projectName": "AspFinalProject_JotexLive_CodeAcademy",
-      "projectPath": "C:\\Users\\Administrator\\source\\repos\\AspFinalProject_JotexLive_CodeAcademy\\AspFinalProject_JotexLive_CodeAcademy\\AspFinalProject_JotexLive_CodeAcademy.csproj",
+      "projectPath": "C:\\Users\\Administrator\\Desktop\\AspFinalProject_JotexLive_CodeAcademy\\AspFinalProject_JotexLive_CodeAcademy\\AspFinalProject_JotexLive_CodeAcademy.csproj",
       "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Administrator\\source\\repos\\AspFinalProject_JotexLive_CodeAcademy\\AspFinalProject_JotexLive_CodeAcademy\\obj\\",
+      "outputPath": "C:\\Users\\Administrator\\Desktop\\AspFinalProject_JotexLive_CodeAcademy\\AspFinalProject_JotexLive_CodeAcademy\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -8225,8 +8225,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\Administrator\\source\\repos\\AspFinalProject_JotexLive_CodeAcademy\\Repository\\Repository.csproj": {
-              "projectPath": "C:\\Users\\Administrator\\source\\repos\\AspFinalProject_JotexLive_CodeAcademy\\Repository\\Repository.csproj"
+            "C:\\Users\\Administrator\\Desktop\\AspFinalProject_JotexLive_CodeAcademy\\Repository\\Repository.csproj": {
+              "projectPath": "C:\\Users\\Administrator\\Desktop\\AspFinalProject_JotexLive_CodeAcademy\\Repository\\Repository.csproj"
             }
           }
         }

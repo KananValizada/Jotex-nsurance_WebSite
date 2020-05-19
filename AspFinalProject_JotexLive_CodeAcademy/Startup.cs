@@ -35,6 +35,10 @@ namespace AspFinalProject_JotexLive_CodeAcademy
             ));
             services.AddAutoMapper(typeof(Startup));
             services.AddTransient<ISliderRepository, SliderRepository>();
+            services.AddTransient<IAboutUsRepository, AboutUsRepository>();
+            services.AddTransient<IBestServicesRepository, BestServicesRepository>();
+            services.AddTransient<ILikeableAreaRepository, LikeableAreaRepository>();
+            services.AddTransient<IClaimSettlementRepository, ClaimSettlementRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

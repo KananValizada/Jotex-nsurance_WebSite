@@ -13,6 +13,13 @@ namespace AspFinalProject_JotexLive_CodeAcademy.Mapping
         public MappingProfile()
         {
             CreateMap<SliderItem, SliderItemViewModel>();
+            CreateMap<Settings, SettingsViewModel>();
+            CreateMap<AboutUs, AboutUsViewModel>();
+            CreateMap<Service, BestServicesViewModel>();
+            CreateMap<LikeableArea, LikeableAreaViewModel>();
+            CreateMap<ClaimSettlementOption, ClaimSettlementOptionViewModel>();
+            CreateMap<ClaimSettlement, ClaimSettlementViewModel>();
+
         }
         
     }

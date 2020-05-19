@@ -28,5 +28,6 @@ namespace Repository.Models
         [Required]
         [MaxLength(50)]
         public string WorkTime { get; set; }
+        public IEnumerable<AboutUs> AboutUs { get; set; } 
     }
 }

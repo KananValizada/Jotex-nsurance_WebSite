@@ -1,0 +1,39 @@
+﻿
+@model IEnumerable<LikeableAreaViewModel>
+
+@foreach (var item in Model)
+{
+    <div class="content-area clearfix">
+        <div class="left-col">
+            <div class="inner-area">
+                <div class="section-title">
+                    <span>Sevimlilər bölməsi</span>
+                    <h2>@item.Slogan</h2>
+                </div>
+                <div class="details">
+                    <p>@item.Text</p>
+                </div>
+                <div class="contact-info">
+                    <p>Detallar üçün zəng edin</p>
+                    <h2>@item.Phone</h2>
+                    <a href="#" class="theme-btn-s3">@item.ActionText</a>
+                </div>
+            </div>
+        </div>
+        <div class="right-col">
+            <div class="video-area" style="background:~/images/@item.Photo">
+                <div class="video-btns">
+                    <a href="https://www.youtube.com/embed/7e90gBu4pas?autoplay=1" class="video-btn" data-type="iframe" tabindex="0"><i class="fi flaticon-play"></i></a>
+                </div>
+                <div class="experience-text">
+                    <p><span>@item.ExpYear</span> Years of <br>experience</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    break;
+}
+
+
+

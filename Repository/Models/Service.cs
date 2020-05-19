@@ -30,7 +30,7 @@ namespace Repository.Models
         public string EndPoint { get; set; }
         public ICollection<ServiceSpec> ServiceSpecs { get; set; }
         public ICollection<ServiceFeature> ServiceFeatures { get; set; }
-        public ICollection<ServiceReview> ServiceReviews { get; set; }
+        public ICollection<Testimonial> Testimonials { get; set; }
         public ICollection<Blog> Blogs { get; set; }
 
 

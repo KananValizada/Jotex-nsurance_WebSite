@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "CJ1SV3Gpxg3N4XIObtQUTqfNUG1DA8h92tU4mtwrY+hkypCmg3+O4V7WDjmKOJvbaCfVvr4c9hnBAeTE9CzYlg==",
+  "dgSpecHash": "KMT4ewk2mRfptWw8yANgdMsQrnlkQxndB3xnXCc8HCW6np2v0vJ0kUwrUHv8nIBhAfljZM5+ZIP4EyrmsloX8Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Administrator\\source\\repos\\AspFinalProject_JotexLive_CodeAcademy\\AspFinalProject_JotexLive_CodeAcademy\\AspFinalProject_JotexLive_CodeAcademy.csproj",
+  "projectFilePath": "C:\\Users\\Administrator\\Desktop\\AspFinalProject_JotexLive_CodeAcademy\\AspFinalProject_JotexLive_CodeAcademy\\AspFinalProject_JotexLive_CodeAcademy.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Administrator\\.nuget\\packages\\automapper\\9.0.0\\automapper.9.0.0.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\7.0.0\\automapper.extensions.microsoft.dependencyinjection.7.0.0.nupkg.sha512",
