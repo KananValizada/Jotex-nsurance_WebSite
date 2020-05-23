@@ -304,7 +304,13 @@ C:\Users\Administrator\Desktop\AspFinalProject_JotexLive_CodeAcademy\AspFinalPro
 C:\Users\Administrator\Desktop\AspFinalProject_JotexLive_CodeAcademy\AspFinalProject_JotexLive_CodeAcademy\obj\Debug\netcoreapp3.1\AspFinalProject_JotexLive_CodeAcademy.dll
 C:\Users\Administrator\Desktop\AspFinalProject_JotexLive_CodeAcademy\AspFinalProject_JotexLive_CodeAcademy\obj\Debug\netcoreapp3.1\AspFinalProject_JotexLive_CodeAcademy.pdb
 C:\Users\Administrator\Desktop\AspFinalProject_JotexLive_CodeAcademy\AspFinalProject_JotexLive_CodeAcademy\obj\Debug\netcoreapp3.1\AspFinalProject_JotexLive_CodeAcademy.genruntimeconfig.cache
-C:\Users\Administrator\Desktop\AspFinalProject_JotexLive_CodeAcademy\AspFinalProject_JotexLive_CodeAcademy\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\AboutUs\Default.cshtml.g.cs
 C:\Users\Administrator\Desktop\AspFinalProject_JotexLive_CodeAcademy\AspFinalProject_JotexLive_CodeAcademy\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\BestServices\Default.cshtml.g.cs
 C:\Users\Administrator\Desktop\AspFinalProject_JotexLive_CodeAcademy\AspFinalProject_JotexLive_CodeAcademy\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\LikeableArea\Default.cshtml.g.cs
 C:\Users\Administrator\Desktop\AspFinalProject_JotexLive_CodeAcademy\AspFinalProject_JotexLive_CodeAcademy\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\ClaimSettlement\Default.cshtml.g.cs
+C:\Users\Administrator\Desktop\AspFinalProject_JotexLive_CodeAcademy\AspFinalProject_JotexLive_CodeAcademy\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\Testimonial\Default.cshtml.g.cs
+C:\Users\Administrator\Desktop\AspFinalProject_JotexLive_CodeAcademy\AspFinalProject_JotexLive_CodeAcademy\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\Award\Default.cshtml.g.cs
+C:\Users\Administrator\Desktop\AspFinalProject_JotexLive_CodeAcademy\AspFinalProject_JotexLive_CodeAcademy\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\HomeBlog\Default.cshtml.g.cs
+C:\Users\Administrator\Desktop\AspFinalProject_JotexLive_CodeAcademy\AspFinalProject_JotexLive_CodeAcademy\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\FunFacts\Default.cshtml.g.cs
+C:\Users\Administrator\Desktop\AspFinalProject_JotexLive_CodeAcademy\AspFinalProject_JotexLive_CodeAcademy\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\AboutUsHome\Default.cshtml.g.cs
+C:\Users\Administrator\Desktop\AspFinalProject_JotexLive_CodeAcademy\AspFinalProject_JotexLive_CodeAcademy\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\AboutUs\Default.cshtml.g.cs
+C:\Users\Administrator\Desktop\AspFinalProject_JotexLive_CodeAcademy\AspFinalProject_JotexLive_CodeAcademy\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\Agent\Default.cshtml.g.cs

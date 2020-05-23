@@ -20,6 +20,7 @@ namespace Repository.Repositories.ContentRepositories
         {
             return _context.AboutUs.Where(a => a.Status)
                                   .Include("Settings")
+                                  .Include("Agents")
                                   .ToList();
         }
     }

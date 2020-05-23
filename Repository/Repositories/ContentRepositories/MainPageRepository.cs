@@ -18,6 +18,16 @@ namespace Repository.Repositories.ContentRepositories
         IEnumerable<ClaimSettlement> GetClaimSettlements();
 
     }
+    public interface ITestimonialsRepository
+    {
+        IEnumerable<Testimonial> GetTestimonials();
+
+    }
+    public interface IAwardsRepository
+    {
+        IEnumerable<Award> GetAwards();
+
+    }
     public class LikeableAreaRepository : ILikeableAreaRepository
     {
         private readonly JotexDbContext _context;
@@ -49,5 +59,32 @@ namespace Repository.Repositories.ContentRepositories
 
 
 
+    }
+    public class TestimonialsRepository : ITestimonialsRepository
+    {
+        private readonly JotexDbContext _context;
+        public TestimonialsRepository(JotexDbContext context)
+        {
+            _context = context;
+        }
+
+
+        public IEnumerable<Testimonial> GetTestimonials()
+        {
+            return _context.Testimonials.Where(t => t.Status)
+                                        .ToList();
+        }
+    }
+    public class AwardsRepository : IAwardsRepository
+    {
+        private readonly JotexDbContext _context;
+        public AwardsRepository(JotexDbContext context)
+        {
+            _context = context;
+        }
+        public IEnumerable<Award> GetAwards()
+        {
+            return _context.Awards.Where(a => a.Status).ToList();
+        }
     }
 }

@@ -1,0 +1,37 @@
+﻿@model IEnumerable<AboutUsViewModel>
+    <div class="agents-area-with-title">
+        <div class="agents-grids clearfix">
+            @foreach (var item in Model)
+            {
+                <div class="grid">
+                    <div class="section-title">
+                        <span>Agentlər</span>
+                        <h2>Agentlərimiz</h2>
+                    </div>
+                    <div class="info">
+                        <h3>@item.Settings.Phone</h3>
+                        <h4>@item.Settings.Email</h4>
+                        <a href="#" class="theme-btn">Daha ətraflı</a>
+                    </div>
+                </div>
+
+                @foreach (var agent in item.Agents)
+                {
+                    <div class="grid">
+                        <div class="img-holder">
+                            <img src="images/agents/@agent.Image" alt="">
+                        </div>
+                        <div class="agent-info">
+                            <h4>@agent.Name</h4>
+                            <p>@agent.Profession</p>
+                        </div>
+                    </div>
+                }
+
+            }
+
+
+
+
+        </div>
+    </div>

@@ -14,11 +14,18 @@ namespace AspFinalProject_JotexLive_CodeAcademy.Mapping
         {
             CreateMap<SliderItem, SliderItemViewModel>();
             CreateMap<Settings, SettingsViewModel>();
+            CreateMap<Agent, AgentViewModel>();
             CreateMap<AboutUs, AboutUsViewModel>();
+            CreateMap<BlogImage, BlogImageViewModel>();
+            CreateMap<Blog, BlogViewModel>();
             CreateMap<Service, BestServicesViewModel>();
             CreateMap<LikeableArea, LikeableAreaViewModel>();
             CreateMap<ClaimSettlementOption, ClaimSettlementOptionViewModel>();
             CreateMap<ClaimSettlement, ClaimSettlementViewModel>();
+            CreateMap<Testimonial, TestimonialViewModel>();
+            CreateMap<Award, AwardViewModel>();
+
+
 
         }
         

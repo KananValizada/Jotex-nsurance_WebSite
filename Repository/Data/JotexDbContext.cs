@@ -10,9 +10,11 @@ namespace Repository.Data
         public JotexDbContext(DbContextOptions<JotexDbContext> options) : base(options) { }
         public DbSet<AboutUs> AboutUs { get; set; }
         public DbSet<Agent> Agents { get; set; }
+        public DbSet<Award> Awards{ get; set; }
         public DbSet<Blog> Blogs { get; set; }
         public DbSet<BlogComment> BlogComments { get; set; }
         public DbSet<BlogSlogan> BlogSlogans { get; set; }
+        public DbSet<BlogImage> BlogImages { get; set; }
         public DbSet<ClaimSettlement> ClaimSettlement { get; set; }
         public DbSet<ClaimSettlementOption> ClaimSettlementOptions { get; set; }
         public DbSet<LikeableArea> LikeableArea { get; set; }
@@ -22,6 +24,7 @@ namespace Repository.Data
         public DbSet<ServiceSpec> ServiceSpecs { get; set; }
         public DbSet<Settings> Settings { get; set; }
         public DbSet<SliderItem> SliderItems { get; set; }
+        
 
     }
 }

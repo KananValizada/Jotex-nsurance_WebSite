@@ -1,4 +1,5 @@
-﻿using Repository.Data;
+﻿using Microsoft.EntityFrameworkCore;
+using Repository.Data;
 using Repository.Models;
 using System;
 using System.Collections.Generic;
@@ -16,7 +17,8 @@ namespace Repository.Repositories.ContentRepositories
         }
         public IEnumerable<Service> getBestServices()
         {
-            return _context.Services.Where(s => s.Status).ToList();
+            return _context.Services.Include("Blogs")
+                                    .Include("Blogs.BlogImages").Where(s => s.Status).ToList();
         }
     }
 }

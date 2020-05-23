@@ -1,51 +1,46 @@
 ﻿@model IEnumerable<AboutUsViewModel>
 @foreach (var item in Model)
 {
-    <div class="col col-xs-12">
-        <div class="inner clearfix">
-            <div class="left-col">
-                <div class="section-title">
-                    <span>Haqqımızda</span>
-                    <h2>@item.Title</h2>
-                </div>
-                <div class="details">
-                    <p>@item.Text</p>
-                    <h5>Phone:@item.Settings.Phone</h5>
-                </div>
+    <div class="row">
+        <div class="col col-md-3">
+            <div class="section-title mt">
+                <span>Haqqımızda</span>
+                <img src="images/@item.Settings.Logo" alt="">
             </div>
-            <div class="right-col">
-                <div class="about-info">
-                    <h3>@item.SubTitle</h3>
-                    <p>@item.About</p>
-                    <a href="#" class="theme-btn">Daha ətraflı</a>
-                </div>
+            <div class="info">
+                <h3>@item.Settings.Phone</h3>
+                <h4>@item.Settings.Email</h4>
+                <a href="#" class="theme-btn">Haqqımızda daha ətraflı</a>
             </div>
         </div>
-        <div class="fun-fact-area">
-            <div class="fun-fact-grids clearfix">
+        <div class="col col-md-5">
+            <div class="details-text mt">
+                <h4>@item.SubTitle</h4>
+                <p>@item.About</p>
+            </div>
+        </div>
+        <div class="col col-md-4">
+            <div class="features-grid clearfix">
                 <div class="grid">
-                    <div class="info">
-                        <h3><span class="odometer" data-count="@item.PolicyCount">00</span>+</h3>
-                        <p>Bağlanmış sığorta müqavilələri</p>
-                        <p>@item.PolicyText</p>
-                        <a href="#" class="theme-btn-s3">@item.PolicyActionText</a>
+                    <div class="icon">
+                        <i class="fi flaticon-money-bag"></i>
                     </div>
+                    <h3>Tələb et</h3>
+                    <p>Ödənişi tələb edə bilərsən</p>
                 </div>
                 <div class="grid">
-                    <div class="info">
-                        <h3><span class="odometer" data-count="@item.ClaimPercent">00</span>%</h3>
-                        <p>Ödənilən haq göstəricisi</p>
-                        <p>@item.ClaimText</p>
-                        <a href="#" class="theme-btn-s3">@item.ClaimActionText</a>
+                    <div class="icon">
+                        <i class="fi flaticon-agent"></i>
                     </div>
+                    <h3>Agent tap</h3>
+                    <p>Agent axtarışındasan?</p>
                 </div>
                 <div class="grid">
-                    <div class="info">
-                        <h3><span class="odometer" data-count="@item.OfficeCount">00</span></h3>
-                        <p>Beynəlxalq ofis sayı</p>
-                        <p>@item.OfficeText</p>
-                        <a href="#" class="theme-btn-s3">@item.OfficeActionText</a>
+                    <div class="icon">
+                        <i class="fi flaticon-cost"></i>
                     </div>
+                    <h3>Premium ödə</h3>
+                    <p>Elə indicə ödə</p>
                 </div>
             </div>
         </div>
