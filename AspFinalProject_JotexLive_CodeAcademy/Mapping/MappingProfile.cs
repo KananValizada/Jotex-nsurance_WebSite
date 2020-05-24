@@ -24,6 +24,7 @@ namespace AspFinalProject_JotexLive_CodeAcademy.Mapping
             CreateMap<ClaimSettlement, ClaimSettlementViewModel>();
             CreateMap<Testimonial, TestimonialViewModel>();
             CreateMap<Award, AwardViewModel>();
+            CreateMap<Fag, FagViewModel>();
 
 
 

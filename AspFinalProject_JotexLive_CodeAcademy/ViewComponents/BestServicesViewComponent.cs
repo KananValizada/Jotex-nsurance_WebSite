@@ -21,7 +21,7 @@ namespace AspFinalProject_JotexLive_CodeAcademy.ViewComponents
         }
         public IViewComponentResult Invoke()
         {
-            var bestServices = _bestServicesRepository.getBestServices();
+            var bestServices = _bestServicesRepository.getBestServices(6);
 
             var model = _mapper.Map<IEnumerable<Service>, IEnumerable<BestServicesViewModel>>(bestServices);
 

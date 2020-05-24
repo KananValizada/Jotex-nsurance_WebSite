@@ -15,5 +15,6 @@ namespace AspFinalProject_JotexLive_CodeAcademy.Models
         public string Image { get; set; }
         public string EndPoint { get; set; }
         public List<BlogViewModel> Blogs { get; set; }
+        public List<AgentViewModel> Agents { get; set; }
     }
 }

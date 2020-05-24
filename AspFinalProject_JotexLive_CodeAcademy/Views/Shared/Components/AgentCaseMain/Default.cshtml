@@ -1,0 +1,21 @@
+﻿@model IEnumerable<BestServicesViewModel>
+
+            @foreach (var item in Model)
+            {
+                @foreach (var agent in item.Agents)
+                {
+                    <div class="grid">
+                        <div class="img-holder">
+                            <img src="images/case-studies/@agent.Image" alt="">
+                        </div>
+                        <div class="overlay">
+                            <div class="content">
+                                <p class="cat">Sığorta</p>
+                                <h3><a href="#">@item.Name</a></h3>
+                            </div>
+                        </div>
+                    </div>
+                    break; 
+                }
+
+            }

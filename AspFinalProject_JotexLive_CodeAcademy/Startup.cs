@@ -41,6 +41,7 @@ namespace AspFinalProject_JotexLive_CodeAcademy
             services.AddTransient<IClaimSettlementRepository, ClaimSettlementRepository>();
             services.AddTransient<ITestimonialsRepository, TestimonialsRepository>();
             services.AddTransient<IAwardsRepository, AwardsRepository>();
+            services.AddTransient<IFagRepository, FagRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

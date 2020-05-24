@@ -7,6 +7,6 @@ namespace Repository.Repositories.ContentRepositories
 {
     public interface IBestServicesRepository
     {
-        IEnumerable<Service> getBestServices();
+        IEnumerable<Service> getBestServices(int count);
     }
 }

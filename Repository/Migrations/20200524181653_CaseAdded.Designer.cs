@@ -10,8 +10,8 @@ using Repository.Data;
 namespace Repository.Migrations
 {
     [DbContext(typeof(JotexDbContext))]
-    [Migration("20200523125601_BlogİmagesAdded")]
-    partial class BlogİmagesAdded
+    [Migration("20200524181653_CaseAdded")]
+    partial class CaseAdded
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -121,9 +121,6 @@ namespace Repository.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<int>("AboutUsId")
-                        .HasColumnType("int");
-
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime2");
 
@@ -153,12 +150,15 @@ namespace Repository.Migrations
                         .HasColumnType("nvarchar(50)")
                         .HasMaxLength(50);
 
+                    b.Property<int>("ServiceId")
+                        .HasColumnType("int");
+
                     b.Property<bool>("Status")
                         .HasColumnType("bit");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("AboutUsId");
+                    b.HasIndex("ServiceId");
 
                     b.ToTable("Agents");
                 });
@@ -391,6 +391,53 @@ namespace Repository.Migrations
                     b.ToTable("BlogSlogans");
                 });
 
+            modelBuilder.Entity("Repository.Models.CaseStudy", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("ChallengeText")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("CreatedBy")
+                        .HasColumnType("nvarchar(50)")
+                        .HasMaxLength(50);
+
+                    b.Property<string>("MainTitle")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("ModifiedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("ModifiedBy")
+                        .HasColumnType("nvarchar(50)")
+                        .HasMaxLength(50);
+
+                    b.Property<string>("ResultText")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("SolutionText")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("Status")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Text")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Title")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("CaseStudy");
+                });
+
             modelBuilder.Entity("Repository.Models.ClaimSettlement", b =>
                 {
                     b.Property<int>("Id")
@@ -472,6 +519,45 @@ namespace Repository.Migrations
                     b.HasIndex("ClaimSettlementId");
 
                     b.ToTable("ClaimSettlementOptions");
+                });
+
+            modelBuilder.Entity("Repository.Models.Fag", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Answer")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(500)")
+                        .HasMaxLength(500);
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("CreatedBy")
+                        .HasColumnType("nvarchar(50)")
+                        .HasMaxLength(50);
+
+                    b.Property<DateTime>("ModifiedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("ModifiedBy")
+                        .HasColumnType("nvarchar(50)")
+                        .HasMaxLength(50);
+
+                    b.Property<string>("Question")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(100)")
+                        .HasMaxLength(100);
+
+                    b.Property<bool>("Status")
+                        .HasColumnType("bit");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Fags");
                 });
 
             modelBuilder.Entity("Repository.Models.LikeableArea", b =>
@@ -812,6 +898,46 @@ namespace Repository.Migrations
                     b.ToTable("SliderItems");
                 });
 
+            modelBuilder.Entity("Repository.Models.StudySpec", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<int>("CaseStudyId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("CreatedBy")
+                        .HasColumnType("nvarchar(50)")
+                        .HasMaxLength(50);
+
+                    b.Property<string>("Key")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("ModifiedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("ModifiedBy")
+                        .HasColumnType("nvarchar(50)")
+                        .HasMaxLength(50);
+
+                    b.Property<bool>("Status")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Value")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CaseStudyId");
+
+                    b.ToTable("StudySpec");
+                });
+
             modelBuilder.Entity("Repository.Models.Testimonial", b =>
                 {
                     b.Property<int>("Id")
@@ -877,9 +1003,9 @@ namespace Repository.Migrations
 
             modelBuilder.Entity("Repository.Models.Agent", b =>
                 {
-                    b.HasOne("Repository.Models.AboutUs", "AboutUs")
+                    b.HasOne("Repository.Models.Service", "Service")
                         .WithMany("Agents")
-                        .HasForeignKey("AboutUsId")
+                        .HasForeignKey("ServiceId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });
@@ -943,6 +1069,15 @@ namespace Repository.Migrations
                     b.HasOne("Repository.Models.Service", "Service")
                         .WithMany("ServiceSpecs")
                         .HasForeignKey("ServiceId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("Repository.Models.StudySpec", b =>
+                {
+                    b.HasOne("Repository.Models.CaseStudy", "CaseStudy")
+                        .WithMany("StudySpecs")
+                        .HasForeignKey("CaseStudyId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });

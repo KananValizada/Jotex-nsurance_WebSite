@@ -13,17 +13,17 @@ namespace AspFinalProject_JotexLive_CodeAcademy.ViewComponents
     public class AgentViewComponent : ViewComponent
     {
         private readonly IMapper _mapper;
-        private readonly IAboutUsRepository _aboutUsRepository;
-        public AgentViewComponent(IMapper mapper, IAboutUsRepository aboutUsRepository)
+        private readonly IBestServicesRepository _bestServicesRepository;
+        public AgentViewComponent(IMapper mapper, IBestServicesRepository bestServicesRepository)
         {
             _mapper = mapper;
-            _aboutUsRepository = aboutUsRepository;
+            _bestServicesRepository = bestServicesRepository;
         }
         public IViewComponentResult Invoke()
         {
-            var aboutUs = _aboutUsRepository.GetAboutUs();
+            var bestServices = _bestServicesRepository.getBestServices(7);
 
-            var model = _mapper.Map<IEnumerable<AboutUs>, IEnumerable<AboutUsViewModel>>(aboutUs);
+            var model = _mapper.Map<IEnumerable<Service>, IEnumerable<BestServicesViewModel>>(bestServices);
 
             return View(model);
         }

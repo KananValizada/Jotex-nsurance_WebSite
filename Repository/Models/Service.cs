@@ -32,6 +32,7 @@ namespace Repository.Models
         public ICollection<ServiceFeature> ServiceFeatures { get; set; }
         public ICollection<Testimonial> Testimonials { get; set; }
         public ICollection<Blog> Blogs { get; set; }
+        public ICollection<Agent> Agents { get; set; }
 
 
     }

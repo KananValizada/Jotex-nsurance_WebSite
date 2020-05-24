@@ -7,8 +7,9 @@ namespace Repository.Models
 {
     public class Agent : BaseEntity
     {
+
         [Required]
-        public int AboutUsId { get; set; }
+        public int ServiceId { get; set; }
         [Required]
         [MaxLength(50)]
         public string Name { get; set; }
@@ -18,6 +19,7 @@ namespace Repository.Models
         [Required]
         [MaxLength(100)]
         public string Image { get; set; }
-        public AboutUs AboutUs { get; set; }
+        public Service Service { get; set; }
+
     }
 }

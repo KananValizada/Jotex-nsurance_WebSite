@@ -14,9 +14,11 @@ namespace Repository.Data
         public DbSet<Blog> Blogs { get; set; }
         public DbSet<BlogComment> BlogComments { get; set; }
         public DbSet<BlogSlogan> BlogSlogans { get; set; }
+        public DbSet<CaseStudy> CaseStudy { get; set; }
         public DbSet<BlogImage> BlogImages { get; set; }
         public DbSet<ClaimSettlement> ClaimSettlement { get; set; }
         public DbSet<ClaimSettlementOption> ClaimSettlementOptions { get; set; }
+        public DbSet<Fag> Fags { get; set; }
         public DbSet<LikeableArea> LikeableArea { get; set; }
         public DbSet<Service> Services { get; set; }
         public DbSet<ServiceFeature> ServiceFeatures { get; set; }

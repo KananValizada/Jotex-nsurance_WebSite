@@ -47,6 +47,6 @@ namespace Repository.Models
         public string OfficeActionText { get; set; }
         public Settings Settings { get; set; }
         public IEnumerable<Testimonial> Testimonials { get; set; }
-        public IEnumerable<Agent> Agents { get; set; }
+
     }
 }

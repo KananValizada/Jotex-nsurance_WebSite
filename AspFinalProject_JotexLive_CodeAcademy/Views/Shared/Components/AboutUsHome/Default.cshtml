@@ -1,27 +1,27 @@
 ﻿@model IEnumerable<AboutUsViewModel>
 
-                @foreach (var item in Model)
-                {
-                    
-                        <div class="inner clearfix">
-                            <div class="left-col">
-                                <div class="section-title">
-                                    <span>Haqqımızda</span>
-                                    <h2>@item.Title</h2>
-                                </div>
-                                <div class="details">
-                                    <p>@item.Text</p>
-                                    <h5>Phone:@item.Settings.Phone</h5>
-                                </div>
-                            </div>
-                            <div class="right-col">
-                                <div class="about-info">
-                                    <h3>@item.SubTitle</h3>
-                                    <p>@item.About</p>
-                                    <a href="#" class="theme-btn">Daha ətraflı</a>
-                                </div>
-                            </div>
-                        </div>
+@foreach (var item in Model)
+{
 
-      
-                }
+    <div class="inner clearfix">
+        <div class="left-col">
+            <div class="section-title">
+                <span>Haqqımızda</span>
+                <h2>@item.Title</h2>
+            </div>
+            <div class="details">
+                <p>@item.Text</p>
+                <h5>Phone:@item.Settings.Phone</h5>
+            </div>
+        </div>
+        <div class="right-col">
+            <div class="about-info">
+                <h3>@item.SubTitle</h3>
+                <p>@item.About</p>
+                <a href="#" class="theme-btn">Daha ətraflı</a>
+            </div>
+        </div>
+    </div>
+
+}
+

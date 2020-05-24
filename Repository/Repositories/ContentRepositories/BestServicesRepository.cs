@@ -15,10 +15,11 @@ namespace Repository.Repositories.ContentRepositories
         {
             _context = context;
         }
-        public IEnumerable<Service> getBestServices()
+        public IEnumerable<Service> getBestServices(int count)
         {
             return _context.Services.Include("Blogs")
-                                    .Include("Blogs.BlogImages").Where(s => s.Status).ToList();
+                                    .Include("Agents")
+                                    .Include("Blogs.BlogImages").Where(s => s.Status).Take(count).ToList();
         }
     }
 }

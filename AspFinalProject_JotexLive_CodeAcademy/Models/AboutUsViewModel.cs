@@ -35,7 +35,6 @@ namespace AspFinalProject_JotexLive_CodeAcademy.Models
 
         public string OfficeActionText { get; set; }
         public SettingsViewModel Settings { get; set; }
-        public List<AgentViewModel> Agents { get; set; }
 
     }
 }
