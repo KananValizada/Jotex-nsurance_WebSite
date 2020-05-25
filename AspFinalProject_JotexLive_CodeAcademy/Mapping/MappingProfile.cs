@@ -18,6 +18,8 @@ namespace AspFinalProject_JotexLive_CodeAcademy.Mapping
             CreateMap<AboutUs, AboutUsViewModel>();
             CreateMap<BlogImage, BlogImageViewModel>();
             CreateMap<Blog, BlogViewModel>();
+            CreateMap<ServiceSpec, ServiceSpecViewModel>();
+            CreateMap<ServiceFeature, ServiceFeatureViewModel>();
             CreateMap<Service, BestServicesViewModel>();
             CreateMap<LikeableArea, LikeableAreaViewModel>();
             CreateMap<ClaimSettlementOption, ClaimSettlementOptionViewModel>();
@@ -25,6 +27,8 @@ namespace AspFinalProject_JotexLive_CodeAcademy.Mapping
             CreateMap<Testimonial, TestimonialViewModel>();
             CreateMap<Award, AwardViewModel>();
             CreateMap<Fag, FagViewModel>();
+            CreateMap<StudySpec, StudySpecsViewModel>();
+            CreateMap<CaseStudy, CaseStudyViewModel>();
 
 
 

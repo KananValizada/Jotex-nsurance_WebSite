@@ -19,6 +19,8 @@ namespace Repository.Repositories.ContentRepositories
         {
             return _context.Services.Include("Blogs")
                                     .Include("Agents")
+                                    .Include("ServiceSpecs")
+                                    .Include("ServiceFeatures")
                                     .Include("Blogs.BlogImages").Where(s => s.Status).Take(count).ToList();
         }
     }

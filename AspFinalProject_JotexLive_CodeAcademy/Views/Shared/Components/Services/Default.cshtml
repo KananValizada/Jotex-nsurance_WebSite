@@ -1,0 +1,110 @@
+﻿@model IEnumerable<BestServicesViewModel>
+@{ var a = 0;}
+@{ var b = 0;}
+@{ var toogle = "in active";}
+
+
+<section class="service-single-section section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col col-xs-12">
+                <div class="service-single-tab">
+                    <ul class="nav tab-links clearfix">
+                        @foreach (var item in Model)
+                        {
+
+                            var id = "0";
+                            a++;
+                            id += a;
+                            if (a == 1)
+                            {
+                                <li class="active">
+                                    <a href="#@id" data-toggle="tab">
+                                        <i class="@item.Logo"></i>
+                                        <h3>@item.Name</h3>
+                                    </a>
+                                </li>
+                            }
+                            else
+                            {
+                                <li>
+                                    <a href="#@id" data-toggle="tab">
+                                        <i class="@item.Logo"></i>
+                                        <h3>@item.Name</h3>
+                                    </a>
+                                </li>
+                            }
+
+                        }
+                    </ul>
+
+                    <div class="tab-content">
+                        @foreach (var item in Model)
+                        {
+                            var id = "0";
+                            b++;
+                            id += b;
+                            if (b > 1)
+                            {
+                                toogle = "";
+                            }
+                            <div class="tab-pane fade @toogle" id="@id">
+                                <div class="content-area clearfix">
+                                    <div class="grid info-grid">
+                                        <h3>@item.Name</h3>
+                                        <p> @item.Text</p>
+                                        <p><strong>@item.Slogan</strong></p>
+                                        <table>
+                                            <tbody>
+                                                @foreach (var spec in item.ServiceSpecs)
+                                                {
+                                                    <tr>
+                                                        <td>@spec.Key:</td>
+                                                        <td>@spec.Value</td>
+                                                    </tr>
+                                                }
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="grid">
+                                        <img src="images/service-single/@item.Image" alt="">
+                                    </div>
+                                </div>
+                                <div class="bottom-info">
+                                    <div class="text">
+                                        <h4>@item.Slogan</h4>
+                                        <p>@item.Description</p>
+                                    </div>
+                                    <div class="pdf-dwn-area">
+                                        <a href="#">
+                                            <i class="ti-receipt"></i>
+                                            <h5>General Insurance Conditions</h5>
+                                            <p>Document size: 34kb</p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="features-grid clearfix">
+                                    @foreach (var feature in item.ServiceFeatures)
+                                    {
+                                        <div class="grid">
+                                            <div class="icon">
+                                                <i class="@feature.Logo"></i>
+                                            </div>
+                                            <h3>@feature.Name</h3>
+                                            <p>@feature.Text</p>
+                                        </div>
+                                    }
+
+
+                                </div>
+                            </div>
+
+
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> <!-- end container -->
+</section>

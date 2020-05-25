@@ -1,4 +1,5 @@
-﻿using Repository.Data;
+﻿using Microsoft.EntityFrameworkCore;
+using Repository.Data;
 using Repository.Models;
 using System;
 using System.Collections.Generic;
@@ -20,7 +21,7 @@ namespace Repository.Repositories.ContentRepositories
         }
         public IEnumerable<CaseStudy> GetCaseStudy()
         {
-            return _context.CaseStudy.Where(c => c.Status).ToList();
+            return _context.CaseStudy.Include("StudySpecs").Where(c => c.Status).ToList();
         }
     }
 }
