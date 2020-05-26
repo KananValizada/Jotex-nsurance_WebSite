@@ -1,0 +1,25 @@
+﻿@model IEnumerable<BestServicesViewModel>
+
+@foreach (var item in Model)
+{
+    @foreach (var blog in item.Blogs)
+    { 
+            <div class="grid-item">
+                <div class="post format-standard-image">
+                    <div class="entry-media">
+                        <img src="images/blog/@blog.BlogImages[0].Image" alt="@blog.BlogImages[0].Image">
+                    </div>
+                    <ul class="entry-meta">
+                        <li><a href="#"><i class="@item.Logo"></i> @item.Name, şirkət</a></li>
+                    </ul>
+                    <h3><a href="#">@blog.Title</a></h3>
+                    <p>@blog.Text</p>
+                    <a  asp-controller="Blog" asp-action="Detailed" asp-route-id="@blog.Id" class="theme-btn-s3">@blog.ActionText</a>
+                </div>
+            </div>
+        
+
+    }
+
+}
+

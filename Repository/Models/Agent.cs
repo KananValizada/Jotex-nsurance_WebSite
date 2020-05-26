@@ -20,6 +20,7 @@ namespace Repository.Models
         [MaxLength(100)]
         public string Image { get; set; }
         public Service Service { get; set; }
+        public IEnumerable<CaseStudy> CaseStudies { get; set; }
 
     }
 }

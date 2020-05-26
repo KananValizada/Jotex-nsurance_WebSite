@@ -8,5 +8,8 @@ namespace Repository.Repositories.ContentRepositories
     public interface IBestServicesRepository
     {
         IEnumerable<Service> getBestServices(int count);
+        Blog  GetBlogById(int Id);
+
+        void PostBlogComment(BlogComment comment);
     }
 }

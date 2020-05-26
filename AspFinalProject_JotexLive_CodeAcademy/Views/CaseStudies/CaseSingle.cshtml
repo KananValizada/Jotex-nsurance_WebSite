@@ -1,4 +1,4 @@
-﻿
+﻿@model CaseStudyViewModel
 @{
     ViewData["Title"] = "CaseSingle";
 }
@@ -25,7 +25,58 @@
 <!-- start project-single-section -->
 <section class="project-single-section section-padding">
     <div class="container">
-        <vc:case-study></vc:case-study>
+        <div class="row">
+            <div class="col col-md-6">
+                <div class="img-holder">
+                    <img src="~/images/project-single/@Model.Image" alt="">
+                </div>
+            </div>
+            <div class="col col-md-6">
+                <div class="project-details">
+                    <h2>@Model.MainTitle</h2>
+                    <h3>@Model.Title</h3>
+                    <p>@Model.Text</p>
+                    <div class="project-info">
+                        <ul class="clearfix">
+                            @foreach (var specs in Model.studySpecs)
+                            {
+                                <li><span>@specs.Key:</span> @specs.Value</li>
+                            }
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col col-xs-12">
+                <div class="project-single-tab clearfix">
+                    <ul class="nav">
+                        <li>
+                            <a href="#precautions" data-toggle="tab">Təcrübə</a>
+                        </li>
+                        <li>
+                            <a href="#intelligence" data-toggle="tab">Həll Yolu</a>
+                        </li>
+                        <li>
+                            <a href="#specializations" data-toggle="tab">Nəticə</a>
+                        </li>
+                    </ul>
+
+                    <div class="tab-content">
+                        <div class="tab-pane fade" id="precautions">
+                            <p>@Model.ChallengeText</p>
+                        </div>
+                        <div class="tab-pane fade" id="intelligence">
+                            <p>@Model.SolutionText</p>
+                        </div>
+                        <div class="tab-pane fade" id="specializations">
+                            <p>@Model.ResultText</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div class="row">
             <div class="col col-xs-12">
                 <div class="related-case-studies">

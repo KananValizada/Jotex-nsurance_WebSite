@@ -11,6 +11,7 @@ namespace Repository.Repositories.ContentRepositories
     public interface ICaseStudyRepository
     {
         IEnumerable<CaseStudy> GetCaseStudy();
+        CaseStudy GetCaseStudyById(int Id);
     }
     public class CaseStudyRepository : ICaseStudyRepository
     {
@@ -22,6 +23,11 @@ namespace Repository.Repositories.ContentRepositories
         public IEnumerable<CaseStudy> GetCaseStudy()
         {
             return _context.CaseStudy.Include("StudySpecs").Where(c => c.Status).ToList();
+        }
+
+        public CaseStudy GetCaseStudyById(int Id)
+        {
+            return _context.CaseStudy.Include("StudySpecs").FirstOrDefault(s => s.Id == Id);
         }
     }
 }

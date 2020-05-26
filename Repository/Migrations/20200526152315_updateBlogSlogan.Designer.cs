@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Repository.Data;
 
 namespace Repository.Migrations
 {
     [DbContext(typeof(JotexDbContext))]
-    partial class JotexDbContextModelSnapshot : ModelSnapshot
+    [Migration("20200526152315_updateBlogSlogan")]
+    partial class updateBlogSlogan
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -291,11 +293,6 @@ namespace Repository.Migrations
                         .HasColumnType("nvarchar(50)")
                         .HasMaxLength(50);
 
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(100)")
-                        .HasMaxLength(100);
-
                     b.Property<bool>("Status")
                         .HasColumnType("bit");
 
@@ -406,9 +403,6 @@ namespace Repository.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<int>("AgentId")
-                        .HasColumnType("int");
-
                     b.Property<string>("ChallengeText")
                         .IsRequired()
                         .HasColumnType("nvarchar(500)")
@@ -462,8 +456,6 @@ namespace Repository.Migrations
                         .HasMaxLength(100);
 
                     b.HasKey("Id");
-
-                    b.HasIndex("AgentId");
 
                     b.ToTable("CaseStudy");
                 });
@@ -1072,15 +1064,6 @@ namespace Repository.Migrations
                     b.HasOne("Repository.Models.Blog", "Blog")
                         .WithMany("BlogSlogans")
                         .HasForeignKey("BlogId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-                });
-
-            modelBuilder.Entity("Repository.Models.CaseStudy", b =>
-                {
-                    b.HasOne("Repository.Models.Agent", "Agent")
-                        .WithMany("CaseStudies")
-                        .HasForeignKey("AgentId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });

@@ -8,7 +8,7 @@ namespace AspFinalProject_JotexLive_CodeAcademy.Models
 {
     public class CaseStudyViewModel
     {
-
+        public int Id { get; set; }
         public string MainTitle { get; set; }
 
         public string Title { get; set; }

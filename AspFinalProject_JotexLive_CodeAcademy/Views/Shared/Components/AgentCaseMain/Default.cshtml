@@ -11,7 +11,11 @@
                         <div class="overlay">
                             <div class="content">
                                 <p class="cat">Sığorta</p>
-                                <h3><a href="#">@item.Name</a></h3>
+                                @foreach (var casestudy in agent.CaseStudies)
+                                {
+                                    <h3><a asp-controller="casestudies" asp-action="casesingle" asp-route-id="@casestudy.Id">@item.Name</a></h3>
+                                    break;
+                                }
                             </div>
                         </div>
                     </div>

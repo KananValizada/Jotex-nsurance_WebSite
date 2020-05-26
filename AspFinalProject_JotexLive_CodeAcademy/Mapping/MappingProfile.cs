@@ -16,6 +16,7 @@ namespace AspFinalProject_JotexLive_CodeAcademy.Mapping
             CreateMap<Settings, SettingsViewModel>();
             CreateMap<Agent, AgentViewModel>();
             CreateMap<AboutUs, AboutUsViewModel>();
+            CreateMap<BlogSlogan, BlogSloganViewModel>();
             CreateMap<BlogImage, BlogImageViewModel>();
             CreateMap<Blog, BlogViewModel>();
             CreateMap<ServiceSpec, ServiceSpecViewModel>();

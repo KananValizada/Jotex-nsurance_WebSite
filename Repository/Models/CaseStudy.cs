@@ -7,6 +7,7 @@ namespace Repository.Models
 {
     public class CaseStudy : BaseEntity
     {
+        public int AgentId { get; set; }
         [Required]
         [MaxLength(50)]
         public string MainTitle { get; set; }
@@ -28,6 +29,7 @@ namespace Repository.Models
         [Required]
         [MaxLength(500)]
         public string ResultText { get; set; }
+        public Agent Agent { get; set; }
         public ICollection<StudySpec> StudySpecs { get; set; }
     }
 }
