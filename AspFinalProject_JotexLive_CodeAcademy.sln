@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30011.22
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspFinalProject_JotexLive_CodeAcademy", "AspFinalProject_JotexLive_CodeAcademy\AspFinalProject_JotexLive_CodeAcademy.csproj", "{08B7A0C6-9F4A-470B-A538-36BC7397623E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspFinalProject_JotexLive_CodeAcademy", "AspFinalProject_JotexLive_CodeAcademy\AspFinalProject_JotexLive_CodeAcademy.csproj", "{08B7A0C6-9F4A-470B-A538-36BC7397623E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repository", "Repository\Repository.csproj", "{2D5F9EC3-0D30-43A4-9719-C6C6E5C31F0B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Repository", "Repository\Repository.csproj", "{2D5F9EC3-0D30-43A4-9719-C6C6E5C31F0B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Admin", "Admin\Admin.csproj", "{91CB0C8C-1305-40F1-8484-4E14A59791A3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{2D5F9EC3-0D30-43A4-9719-C6C6E5C31F0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2D5F9EC3-0D30-43A4-9719-C6C6E5C31F0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2D5F9EC3-0D30-43A4-9719-C6C6E5C31F0B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91CB0C8C-1305-40F1-8484-4E14A59791A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91CB0C8C-1305-40F1-8484-4E14A59791A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91CB0C8C-1305-40F1-8484-4E14A59791A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91CB0C8C-1305-40F1-8484-4E14A59791A3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

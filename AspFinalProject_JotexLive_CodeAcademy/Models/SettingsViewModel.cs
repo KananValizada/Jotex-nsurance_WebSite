@@ -12,6 +12,9 @@ namespace AspFinalProject_JotexLive_CodeAcademy.Models
         public string Phone { get; set; }
         public string Logo { get; set; }
         public string Email { get; set; }
+        public string Adress { get; set; }
+        public string QueryNumber { get; set; }
+        public string WorkTime { get; set; }
 
 
     }

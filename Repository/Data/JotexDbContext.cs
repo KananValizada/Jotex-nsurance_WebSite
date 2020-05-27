@@ -26,7 +26,8 @@ namespace Repository.Data
         public DbSet<ServiceSpec> ServiceSpecs { get; set; }
         public DbSet<Settings> Settings { get; set; }
         public DbSet<SliderItem> SliderItems { get; set; }
-        
+        public DbSet<Admin> Admins { get; set; }
+
 
     }
 }

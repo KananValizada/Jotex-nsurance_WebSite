@@ -319,3 +319,4 @@ C:\Users\Administrator\Desktop\AspFinalProject_JotexLive_CodeAcademy\AspFinalPro
 C:\Users\Administrator\Desktop\AspFinalProject_JotexLive_CodeAcademy\AspFinalProject_JotexLive_CodeAcademy\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\AgentCaseSingle\Default.cshtml.g.cs
 C:\Users\Administrator\Desktop\AspFinalProject_JotexLive_CodeAcademy\AspFinalProject_JotexLive_CodeAcademy\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\Services\Default.cshtml.g.cs
 C:\Users\Administrator\Desktop\AspFinalProject_JotexLive_CodeAcademy\AspFinalProject_JotexLive_CodeAcademy\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\Blog\Default.cshtml.g.cs
+C:\Users\Administrator\Desktop\AspFinalProject_JotexLive_CodeAcademy\AspFinalProject_JotexLive_CodeAcademy\bin\Debug\netcoreapp3.1\CryptoHelper.dll

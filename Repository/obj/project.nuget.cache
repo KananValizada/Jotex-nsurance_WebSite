@@ -1,9 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "rh9H77YPntWqL5/G4IhUs2I1d6j8MY2/kJQSjkouOA4sN80cC5HEqHPH1i0tiiVlEAW9y+9v412JSLlX7WNNdQ==",
+  "dgSpecHash": "vALQwPIcGURljBm2dfUcpKFhSLdZ5Vc29n4FwA1Gqx6GnzJ7onrudqR8F9oDoHTyhNfOBkhutnbhK6mUq6nIyQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Administrator\\Desktop\\AspFinalProject_JotexLive_CodeAcademy\\Repository\\Repository.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Administrator\\.nuget\\packages\\cryptohelper\\3.0.2\\cryptohelper.3.0.2.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\2.0.1\\microsoft.aspnetcore.cryptography.internal.2.0.1.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\2.0.1\\microsoft.aspnetcore.cryptography.keyderivation.2.0.1.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.0\\microsoft.bcl.hashcode.1.1.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

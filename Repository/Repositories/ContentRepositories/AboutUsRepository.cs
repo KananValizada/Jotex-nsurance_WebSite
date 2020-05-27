@@ -22,5 +22,10 @@ namespace Repository.Repositories.ContentRepositories
                                   .Include("Settings")
                                   .ToList();
         }
+
+        public Settings GetSettings()
+        {
+            return _context.Settings.FirstOrDefault(s => s.Status);
+        }
     }
 }

@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿@model SettingsViewModel
+<!DOCTYPE html>
 <html lang="en">
 
 <!-- Mirrored from themegeniuslab.com/html/jotex-live-cp/index-2.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 14 May 2020 15:23:23 GMT -->
@@ -58,7 +59,7 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" asp-controller="home" asp-action="index"><img src="~/images/logo-2.png" alt=""></a>
+                        <a class="navbar-brand" asp-controller="home" asp-action="index"><img src="~/images/@Model.Logo" alt="@Model.Logo"></a>
                     </div>
                     <div id="navbar" class="navbar-collapse collapse navbar-left navigation-holder">
                         <div class="left-separator"></div>
@@ -88,21 +89,21 @@
                         <div class="contact">
                             <a href="#">
                                 <i class="fi flaticon-feedback"></i>
-                                <h5>Have any query?</h5>
-                                <span>++8891682000000</span>
+                                <h5>Sualınız var?</h5>
+                                <span>@Model.QueryNumber</span>
                             </a>
                         </div>
                         <div class="header-search-area">
                             <div class="header-search-form">
                                 <form class="form">
                                     <div>
-                                        <input type="text" class="form-control" placeholder="Search here">
+                                        <input type="text" class="form-control" placeholder="Axtarış et"/>
                                     </div>
                                     <button type="submit" class="btn"><i class="ti-search"></i></button>
                                 </form>
                             </div>
                             <div>
-                                <button class="btn open-btn"><i class="ti-search"></i> <span>Search</span></button>
+                                <button class="btn open-btn"><i class="ti-search"></i> <span>Axtar</span></button>
                             </div>
                         </div>
                     </div>
@@ -111,32 +112,10 @@
             </nav>
         </header>
         <!-- end of header -->
+
         @RenderBody();
         <!-- start site-footer -->
         <footer class="site-footer">
-            <div class="newsletter-area">
-                <div class="container">
-                    <div class="row">
-                        <div class="col col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                            <div class="newsletter-inner clearfix">
-                                <div class="text">
-                                    <h3>Newsletter</h3>
-                                    <p>Get latest news & update</p>
-                                </div>
-                                <form>
-                                    <div class="input-1">
-                                        <input type="email" class="form-control" placeholder="Email Address *" required="">
-                                    </div>
-                                    <div class="submit clearfix">
-                                        <button type="submit">Subcribe</button>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="separator"></div>
-            </div>
             <div class="upper-footer">
                 <div class="container">
                     <div class="row">
@@ -145,10 +124,10 @@
                                 <div class="widget-title">
                                     <h3>
                                         <span class="hidden">About us</span>
-                                        <img src="assets/images/footer-logo.png" alt="">
+                                        <img src="images/footer-logo.png" alt="">
                                     </h3>
                                 </div>
-                                <p>Showed a lady fitted out with a fur hat and fur boa who sat upright, raising a heavy</p>
+                                <p>Sığorta bizim işimiz</p>
                                 <div class="social-links">
                                     <ul>
                                         <li><a href="#"><i class="ti-facebook"></i></a></li>
@@ -163,43 +142,39 @@
                         <div class="col col-lg-3 col-md-3 col-sm-6">
                             <div class="widget contact-widget service-link-widget">
                                 <div class="widget-title">
-                                    <h3>Address Location</h3>
+                                    <h3>Adres Məlumatları</h3>
                                 </div>
                                 <ul>
-                                    <li>65/15 Old norok Avenew Booston town, Austria</li>
-                                    <li><span>Phone:</span> 84667441</li>
-                                    <li><span>Email:</span> demo@example.com</li>
-                                    <li><span>Office Time:</span> 10AM- 5PM</li>
+                                    <li>@Model.Adress</li>
+                                    <li><span>Telefon:</span>@Model.Phone</li>
+                                    <li><span>Email:</span>@Model.Email</li>
+                                    <li><span>Iş Saatı:</span> @Model.WorkTime</li>
                                 </ul>
                             </div>
                         </div>
                         <div class="col col-lg-3 col-md-3 col-sm-6">
                             <div class="widget link-widget">
                                 <div class="widget-title">
-                                    <h3>Quick Links</h3>
+                                    <h3>Navigator</h3>
                                 </div>
                                 <ul>
-                                    <li><a href="#">About us</a></li>
-                                    <li><a href="#">Our services</a></li>
-                                    <li><a href="#">Contact us</a></li>
-                                    <li><a href="#">Meet team</a></li>
+                                    <li><a asp-controller="aboutus" asp-action="index">Haqqımızda</a></li>
+                                    <li><a asp-controller="services" asp-action="index">Bizim Xidmətlər</a></li>
+                                    <li><a asp-controller="contact">Bizimlə əlaqə</a></li>
                                 </ul>
                                 <ul>
-                                    <li><a href="#">Privacy Policy</a></li>
-                                    <li><a href="#">Testimonials</a></li>
-                                    <li><a href="#">News</a></li>
-                                    <li><a href="#">FAQ</a></li>
+                                    <li><a asp-controller="Faq" asp-action="index">FAQ</a></li>
                                 </ul>
                             </div>
                         </div>
                         <div class="col col-lg-3 col-md-3 col-sm-6">
                             <div class="widget agent-widget">
                                 <div class="widget-title">
-                                    <h3>Need an agent?</h3>
+                                    <h3>Agent lazımdır?</h3>
                                 </div>
                                 <div class="content">
-                                    <h4><a href="#"><i class="fi flaticon-agent"></i> Find it now</a></h4>
-                                    <p>++6485757254</p>
+                                    <h4><a href="#"><i class="fi flaticon-agent"></i> İndi Tap</a></h4>
+                                    <p>@Model.QueryNumber</p>
                                 </div>
                             </div>
                         </div>

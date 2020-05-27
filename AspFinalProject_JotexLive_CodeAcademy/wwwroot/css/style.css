@@ -18445,54 +18445,67 @@ img {
 
 .contact-section .contact-info-grids > div {
     background-color: #6ccb82;
+    height: 275px;
 }
 
 .contact-section .contact-info-grids > div {
     width: 25%;
+    height: 275px;
 }
 
 .contact-section .contact-info-grids > div {
     float: left;
+    height: 275px;
 }
 
 .contact-section .contact-info-grids > div {
     padding-left: 26.25pt;
+    height: 275px;
 }
 
 .contact-section .contact-info-grids > div {
     padding-bottom: 0.625in;
+    height: 275px;
 }
 
 .contact-section .contact-info-grids > div {
     padding-right: 26.25pt;
+    height: 275px;
 }
 
 .contact-section .contact-info-grids > div {
     padding-top: 0.625in;
+    height: 275px;
 }
 
 .contact-section .contact-info-grids > div {
     position: relative;
+    height: 275px;
 }
 
 .contact-section .contact-info-grids > div {
     border-left-width: 0.0625pc;
+    height: 275px;
 }
 
 .contact-section .contact-info-grids > div {
     border-left-style: solid;
+    height: 275px;
 }
 
 [class~="contact-section"] [class~="contact-info-grids"] {
     text-align: center;
+    height: 275px;
 }
 
 .contact-section .contact-info-grids > div {
     border-left-color: #52c26c;
+    height: 275px;
 }
 
 .contact-section .contact-info-grids > div {
     border-image: none;
+    height:275px;
 }
 
 @media (max-width: 991px) {

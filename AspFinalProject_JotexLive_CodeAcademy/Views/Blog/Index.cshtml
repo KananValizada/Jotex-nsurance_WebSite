@@ -1,4 +1,4 @@
-﻿
+﻿@model BlogListViewModel
 @{
     ViewData["Title"] = "Index";
 }
@@ -12,10 +12,10 @@
             <div class="container">
                 <div class="row">
                     <div class="col col-xs-12">
-                        <h2>Masonry 4 columns</h2>
+                        <h2>Bloglar</h2>
                         <ol class="breadcrumb">
                             <li><a href="index.html">Home</a></li>
-                            <li>Masonry 4 columns</li>
+                            <li>Bloglar</li>
                         </ol>
                     </div>
                 </div> <!-- end row -->
@@ -32,23 +32,7 @@
                 <div class="blog-content masonry-grids clearfix">
                     <vc:blog></vc:blog>
                 </div>
-                <div class="pagination-wrapper masonry-pagi pagination-wrapper-center">
-                    <ul class="pg-pagination">
-                        <li>
-                            <a href="#" aria-label="Previous">
-                                <i class="fi flaticon-back"></i>
-                            </a>
-                        </li>
-                        <li class="active"><a href="#">1</a></li>
-                        <li><a href="#">2</a></li>
-                        <li><a href="#">3</a></li>
-                        <li>
-                            <a href="#" aria-label="Next">
-                                <i class="fi flaticon-next"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+     
             </div>
         </div>
     </div> <!-- end container -->

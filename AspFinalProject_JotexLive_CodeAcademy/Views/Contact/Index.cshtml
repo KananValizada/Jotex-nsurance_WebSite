@@ -1,4 +1,4 @@
-﻿
+﻿@model SettingsViewModel
 @{
     ViewData["Title"] = "Index";
 }
@@ -9,10 +9,10 @@
             <div class="container">
                 <div class="row">
                     <div class="col col-xs-12">
-                        <h2>Contact us</h2>
+                        <h2>Əlaqə</h2>
                         <ol class="breadcrumb">
                             <li><a href="index.html">Home</a></li>
-                            <li>Contact us</li>
+                            <li>Əlaqə</li>
                         </ol>
                     </div>
                 </div> <!-- end row -->
@@ -27,32 +27,32 @@
         <div class="row">
             <div class="col col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
                 <div class="section-title-s4">
-                    <span>Contact with us</span>
-                    <h2>Lets get in touch!</h2>
-                    <p>Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nuncIt showed a lady fitted out</p>
+                    <span>Bizimlə əlaqə saxla</span>
+                    <h2>Bu dəqiqə zəng et</h2>
+                    <p>Bizə edilən zənglər və müraciətlər tez bir zamanda cavablanır. Operatorlarımız 7/24 aktivdirlər. Şikayətiniz yaranarsa Email ünvanına sorğu göndərə bilərsiniz.</p>
                 </div>
             </div>
             <div class="col col-xs-12">
                 <div class="contact-info-grids">
-                    <div class="grid">
+                    <div class="grid" style="height:275px">
                         <i class="fi flaticon-house"></i>
-                        <h4>Head Office</h4>
-                        <p>32 bejory soroni road  niceh Melborn Austria</p>
+                        <h4>Baş Ofis</h4>
+                        <p>@Model.Adress</p>
                     </div>
-                    <div class="grid">
+                    <div class="grid" style="height:275px">
                         <i class="fi flaticon-email"></i>
-                        <h4>Email Address</h4>
-                        <p>demo@example.com <br>example@g.com</p>
+                        <h4>Email Ünvanı</h4>
+                        <p>@Model.Email</p>
                     </div>
-                    <div class="grid">
+                    <div class="grid" style="height:275px">
                         <i class="fi flaticon-call"></i>
-                        <h4>Phone Number</h4>
-                        <p>++98747561741 <br>++34+6465465464521</p>
+                        <h4>Telefon Nömrəsi</h4>
+                        <p>@Model.Phone <br>@Model.QueryNumber</p>
                     </div>
-                    <div class="grid">
+                    <div class="grid" style="height:275px">
                         <i class="fi flaticon-alarm"></i>
-                        <h4>Opening Hours</h4>
-                        <p>Mon day - Sun day  <br>10Am - 5PM</p>
+                        <h4>Iş Saatları</h4>
+                        <p>1-ci/5-ci günlər <br>@Model.WorkTime</p>
                     </div>
                 </div>
             </div>
