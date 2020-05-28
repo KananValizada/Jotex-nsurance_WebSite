@@ -22,7 +22,7 @@ namespace AspFinalProject_JotexLive_CodeAcademy.ViewComponents
         }
         public IViewComponentResult Invoke()
         {
-            var fags = _fagRepository.GetFags(4);
+            var fags = _fagRepository.GetFags();
 
             var model = _mapper.Map<IEnumerable<Fag>, IEnumerable<FagViewModel>>(fags);
 

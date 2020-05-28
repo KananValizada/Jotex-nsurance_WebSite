@@ -26,6 +26,7 @@ namespace AspFinalProject_JotexLive_CodeAcademy.Controllers
         {
             var settings = _aboutUsRepository.GetSettings();
             var model = _mapper.Map<Settings, SettingsViewModel>(settings);
+
             return View(model);
         }
 

@@ -11,5 +11,6 @@ namespace Repository.Repositories.ContentRepositories
         Blog  GetBlogById(int Id);
 
         void PostBlogComment(BlogComment comment);
+        IEnumerable<Service> getServices();
     }
 }

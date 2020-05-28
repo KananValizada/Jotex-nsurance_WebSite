@@ -148,3 +148,4 @@ C:\Users\Administrator\Desktop\AspFinalProject_JotexLive_CodeAcademy\Admin\obj\D
 C:\Users\Administrator\Desktop\AspFinalProject_JotexLive_CodeAcademy\Admin\obj\Debug\netcoreapp3.1\Admin.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Administrator\Desktop\AspFinalProject_JotexLive_CodeAcademy\Admin\obj\Debug\netcoreapp3.1\Razor\Views\Faq\Index.cshtml.g.cs
 C:\Users\Administrator\Desktop\AspFinalProject_JotexLive_CodeAcademy\Admin\obj\Debug\netcoreapp3.1\Razor\Views\Faq\Create.cshtml.g.cs
+C:\Users\Administrator\Desktop\AspFinalProject_JotexLive_CodeAcademy\Admin\obj\Debug\netcoreapp3.1\Razor\Views\Faq\Edit.cshtml.g.cs

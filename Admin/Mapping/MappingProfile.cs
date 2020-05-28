@@ -13,6 +13,7 @@ namespace Admin.Mapping
         public MappingProfile()
         {
             CreateMap<Fag, FagViewModel>();
+            CreateMap<FagViewModel, Fag>();
         }
     }
 }

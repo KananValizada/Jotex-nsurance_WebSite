@@ -7,6 +7,11 @@ namespace Repository.Repositories.ContentRepositories
 {
     public interface IFagRepository
     {
-        IEnumerable<Fag> GetFags(int count);
+        IEnumerable<Fag> GetFags();
+        IEnumerable<Fag> GetAllFags();
+        Fag CreateFag(Fag model);
+        Fag GetFagById(int id);
+        void UpdateFag(Fag fagToUpdate, Fag model);
+        void DeleteFag(Fag fag);
     }
 }

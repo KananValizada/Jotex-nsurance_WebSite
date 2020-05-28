@@ -35,6 +35,11 @@ namespace Repository.Repositories.ContentRepositories
                             .Include("BlogImages").Where(b => b.Id == Id).Where(s => s.Status);
         }
 
+        public IEnumerable<Service> getServices()
+        {
+            return _context.Services
+        }
+
         public void PostBlogComment(BlogComment comment)
         {
 

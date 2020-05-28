@@ -43,6 +43,15 @@
       "files": [
         "jquery.validate.unobtrusive.min.js"
       ]
+    },
+    {
+      "provider": "jsdelivr",
+      "library": "jquery-confirm@3.3.4",
+      "destination": "wwwroot/lib/jquery-confirm/",
+      "files": [
+        "css/jquery-confirm.min.css",
+        "js/jquery-confirm.min.js"
+      ]
     }
   ]
 }

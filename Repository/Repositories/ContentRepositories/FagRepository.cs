@@ -15,11 +15,44 @@ namespace Repository.Repositories.ContentRepositories
             _context = context;
         }
 
-        public IEnumerable<Fag> GetFags(int count)
+        public Fag CreateFag(Fag model)
+        {
+            model.CreatedAt = DateTime.Now;
+            _context.Fags.Add(model);
+            _context.SaveChanges();
+            return model;
+        }
+
+        public void DeleteFag(Fag fag)
+        {
+            _context.Fags.Remove(fag);
+            _context.SaveChanges();
+        }
+
+        public IEnumerable<Fag> GetAllFags()
+        {
+            return _context.Fags.ToList();
+        }
+
+        public Fag GetFagById(int id)
+        {
+            return _context.Fags.Find(id);
+        }
+
+        public IEnumerable<Fag> GetFags()
         {
             return _context.Fags.Where(f => f.Status)
-                                .Take(count)
                                 .ToList();
+        }
+
+        public void UpdateFag(Fag fagToUpdate, Fag model)
+        {
+            fagToUpdate.Status = model.Status;
+            fagToUpdate.Question = model.Question;
+            fagToUpdate.Answer = model.Answer;
+            fagToUpdate.ModifiedBy = model.ModifiedBy;
+            fagToUpdate.ModifiedAt = DateTime.Now;
+            _context.SaveChanges();
         }
     }
 }
