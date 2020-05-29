@@ -26,8 +26,15 @@ using AspFinalProject_JotexLive_CodeAcademy.Models;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 3 "C:\Users\Administrator\Desktop\AspFinalProject_JotexLive_CodeAcademy\AspFinalProject_JotexLive_CodeAcademy\Views\_ViewImports.cshtml"
+using Repository.Services;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"c6bb5bed044a0f243fb7f5925734c961053da4ad", @"/Views/Shared/Components/BestServices/Default.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"8cdf00ea3aab2732c387c7b9e129c9e6bb2cfdff", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"5e9b60d80c3fe471e0bfed5cca7697660907ca3f", @"/Views/_ViewImports.cshtml")]
     public class Views_Shared_Components_BestServices_Default : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<IEnumerable<BestServicesViewModel>>
     {
         #pragma warning disable 1998

@@ -26,8 +26,15 @@ using AspFinalProject_JotexLive_CodeAcademy.Models;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 3 "C:\Users\Administrator\Desktop\AspFinalProject_JotexLive_CodeAcademy\AspFinalProject_JotexLive_CodeAcademy\Views\_ViewImports.cshtml"
+using Repository.Services;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"f1a0cac9e8fbeaf73ff473ea533050571ff28669", @"/Views/Faq/Index.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"8cdf00ea3aab2732c387c7b9e129c9e6bb2cfdff", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"5e9b60d80c3fe471e0bfed5cca7697660907ca3f", @"/Views/_ViewImports.cshtml")]
     public class Views_Faq_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         #line hidden
@@ -92,7 +99,7 @@ using AspFinalProject_JotexLive_CodeAcademy.Models;
                     <span>FAQ</span>
                     <h2>Tez");
             WriteLiteral("-tez verilən suallar</h2>\r\n                </div>\r\n            </div>\r\n        </div>\r\n\r\n        ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("vc:fag", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f1a0cac9e8fbeaf73ff473ea533050571ff286694725", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("vc:fag", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f1a0cac9e8fbeaf73ff473ea533050571ff286694966", async() => {
             }
             );
             __FagViewComponentTagHelper = CreateTagHelper<global::AspNetCore.Views_Faq_Index.__Generated__FagViewComponentTagHelper>();

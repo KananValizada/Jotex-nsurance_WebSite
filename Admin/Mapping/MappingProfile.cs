@@ -1,4 +1,5 @@
 ﻿using Admin.Models.Pages;
+using Admin.Models.Services;
 using AutoMapper;
 using Repository.Models;
 using System;
@@ -14,6 +15,8 @@ namespace Admin.Mapping
         {
             CreateMap<Fag, FagViewModel>();
             CreateMap<FagViewModel, Fag>();
+            CreateMap<Service, ServiceViewModel>();
+            CreateMap<ServiceViewModel, Service>();
         }
     }
 }

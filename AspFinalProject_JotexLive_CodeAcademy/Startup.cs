@@ -13,6 +13,7 @@ using Repository.Data;
 using Microsoft.EntityFrameworkCore;
 using Repository.Repositories.ContentRepositories;
 using AutoMapper;
+using Repository.Services;
 
 namespace AspFinalProject_JotexLive_CodeAcademy
 {
@@ -43,6 +44,7 @@ namespace AspFinalProject_JotexLive_CodeAcademy
             services.AddTransient<IAwardsRepository, AwardsRepository>();
             services.AddTransient<IFagRepository, FagRepository>();
             services.AddTransient<ICaseStudyRepository, CaseStudyRepository>();
+            services.AddTransient<ICloudinaryService, CloudinaryService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

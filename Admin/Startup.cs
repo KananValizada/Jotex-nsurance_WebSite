@@ -2,9 +2,11 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Admin.Libs;
 using AutoMapper;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -13,6 +15,7 @@ using Microsoft.Extensions.Hosting;
 using Repository.Data;
 using Repository.Repositories.AdminRepositories;
 using Repository.Repositories.ContentRepositories;
+using Repository.Services;
 
 namespace Admin
 {
@@ -36,6 +39,9 @@ namespace Admin
             services.AddAutoMapper(typeof(Startup));
             services.AddTransient<IAdminRepository, AdminRepository>();
             services.AddTransient<IFagRepository, FagRepository>();
+            services.AddTransient<IBestServicesRepository, BestServicesRepository>();
+            services.AddTransient<ICloudinaryService, CloudinaryService>();
+            services.AddTransient<IFileManager, FileManager>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

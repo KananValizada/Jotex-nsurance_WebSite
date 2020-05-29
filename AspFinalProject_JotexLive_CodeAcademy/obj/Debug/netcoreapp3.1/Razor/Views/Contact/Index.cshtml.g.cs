@@ -26,8 +26,15 @@ using AspFinalProject_JotexLive_CodeAcademy.Models;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 3 "C:\Users\Administrator\Desktop\AspFinalProject_JotexLive_CodeAcademy\AspFinalProject_JotexLive_CodeAcademy\Views\_ViewImports.cshtml"
+using Repository.Services;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"5a3cfa26afb2251b8547830ea05dabba806eb4ac", @"/Views/Contact/Index.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"8cdf00ea3aab2732c387c7b9e129c9e6bb2cfdff", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"5e9b60d80c3fe471e0bfed5cca7697660907ca3f", @"/Views/_ViewImports.cshtml")]
     public class Views_Contact_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<SettingsViewModel>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("disabled", new global::Microsoft.AspNetCore.Html.HtmlString("disabled"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -161,7 +168,7 @@ using AspFinalProject_JotexLive_CodeAcademy.Models;
                 <div class=""col col-md-8"">
                     <div class=""contact-form"">
                         ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5a3cfa26afb2251b8547830ea05dabba806eb4ac9748", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5a3cfa26afb2251b8547830ea05dabba806eb4ac9989", async() => {
                 WriteLiteral(@"
                             <div>
                                 <input type=""text"" class=""form-control"" name=""name"" id=""name"" placeholder=""Name*"">
@@ -175,7 +182,7 @@ using AspFinalProject_JotexLive_CodeAcademy.Models;
                             <div>
                                 <select name=""subject"" class=""form-control"">
                                     ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5a3cfa26afb2251b8547830ea05dabba806eb4ac10756", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5a3cfa26afb2251b8547830ea05dabba806eb4ac10997", async() => {
                     WriteLiteral("Contact subject");
                 }
                 );
@@ -193,7 +200,7 @@ using AspFinalProject_JotexLive_CodeAcademy.Models;
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                                    ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5a3cfa26afb2251b8547830ea05dabba806eb4ac12226", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5a3cfa26afb2251b8547830ea05dabba806eb4ac12467", async() => {
                     WriteLiteral("Subject 1");
                 }
                 );
@@ -207,7 +214,7 @@ using AspFinalProject_JotexLive_CodeAcademy.Models;
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                                    ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5a3cfa26afb2251b8547830ea05dabba806eb4ac13280", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5a3cfa26afb2251b8547830ea05dabba806eb4ac13521", async() => {
                     WriteLiteral("Subject 2");
                 }
                 );
@@ -221,7 +228,7 @@ using AspFinalProject_JotexLive_CodeAcademy.Models;
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                                    ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5a3cfa26afb2251b8547830ea05dabba806eb4ac14334", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5a3cfa26afb2251b8547830ea05dabba806eb4ac14575", async() => {
                     WriteLiteral("Subject 3");
                 }
                 );

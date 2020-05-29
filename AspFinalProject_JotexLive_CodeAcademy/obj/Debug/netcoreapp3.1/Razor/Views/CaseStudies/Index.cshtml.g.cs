@@ -26,8 +26,15 @@ using AspFinalProject_JotexLive_CodeAcademy.Models;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 3 "C:\Users\Administrator\Desktop\AspFinalProject_JotexLive_CodeAcademy\AspFinalProject_JotexLive_CodeAcademy\Views\_ViewImports.cshtml"
+using Repository.Services;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"48991084b30173a9e3a9fb42f04c7d56405d5ac4", @"/Views/CaseStudies/Index.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"8cdf00ea3aab2732c387c7b9e129c9e6bb2cfdff", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"5e9b60d80c3fe471e0bfed5cca7697660907ca3f", @"/Views/_ViewImports.cshtml")]
     public class Views_CaseStudies_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         #line hidden
@@ -99,7 +106,7 @@ using AspFinalProject_JotexLive_CodeAcademy.Models;
     <div class=""content-area"">
         <div class=""case-studies-grids case-studies-slider"">
             ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("vc:agent-case-main", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "48991084b30173a9e3a9fb42f04c7d56405d5ac45069", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("vc:agent-case-main", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "48991084b30173a9e3a9fb42f04c7d56405d5ac45310", async() => {
             }
             );
             __AgentCaseMainViewComponentTagHelper = CreateTagHelper<global::AspNetCore.Views_CaseStudies_Index.__Generated__AgentCaseMainViewComponentTagHelper>();

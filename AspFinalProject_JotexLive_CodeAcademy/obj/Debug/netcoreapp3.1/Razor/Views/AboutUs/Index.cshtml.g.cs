@@ -26,8 +26,15 @@ using AspFinalProject_JotexLive_CodeAcademy.Models;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 3 "C:\Users\Administrator\Desktop\AspFinalProject_JotexLive_CodeAcademy\AspFinalProject_JotexLive_CodeAcademy\Views\_ViewImports.cshtml"
+using Repository.Services;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"9d0b07c95e846e19cb3e2277a173595b12d1c18f", @"/Views/AboutUs/Index.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"8cdf00ea3aab2732c387c7b9e129c9e6bb2cfdff", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"5e9b60d80c3fe471e0bfed5cca7697660907ca3f", @"/Views/_ViewImports.cshtml")]
     public class Views_AboutUs_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         #line hidden
@@ -89,7 +96,7 @@ using AspFinalProject_JotexLive_CodeAcademy.Models;
 <section class=""about-section-s4 section-padding"">
     <div class=""container"">
       ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("vc:about-us", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9d0b07c95e846e19cb3e2277a173595b12d1c18f4763", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("vc:about-us", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9d0b07c95e846e19cb3e2277a173595b12d1c18f5004", async() => {
             }
             );
             __AboutUsViewComponentTagHelper = CreateTagHelper<global::AspNetCore.Views_AboutUs_Index.__Generated__AboutUsViewComponentTagHelper>();
@@ -102,7 +109,7 @@ using AspFinalProject_JotexLive_CodeAcademy.Models;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n    </div> <!-- end container -->\r\n</section>\r\n<section class=\"fun-fact-section\">\r\n    <div class=\"container\">\r\n        <div class=\"row\">\r\n            <div class=\"col col-xs-12\">\r\n                ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("vc:fun-facts", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9d0b07c95e846e19cb3e2277a173595b12d1c18f5879", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("vc:fun-facts", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9d0b07c95e846e19cb3e2277a173595b12d1c18f6120", async() => {
             }
             );
             __FunFactsViewComponentTagHelper = CreateTagHelper<global::AspNetCore.Views_AboutUs_Index.__Generated__FunFactsViewComponentTagHelper>();
@@ -126,7 +133,7 @@ using AspFinalProject_JotexLive_CodeAcademy.Models;
         <div class=""row"">
             <div class=""col col-xs-12"">
                 ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("vc:agent", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9d0b07c95e846e19cb3e2277a173595b12d1c18f7075", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("vc:agent", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9d0b07c95e846e19cb3e2277a173595b12d1c18f7316", async() => {
             }
             );
             __AgentViewComponentTagHelper = CreateTagHelper<global::AspNetCore.Views_AboutUs_Index.__Generated__AgentViewComponentTagHelper>();
@@ -139,7 +146,7 @@ using AspFinalProject_JotexLive_CodeAcademy.Models;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n            </div>\r\n        </div>\r\n    </div> <!-- end container -->\r\n</section>\r\n<!-- end agents-section -->\r\n<!-- start testimonials-section-s2 -->\r\n");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("vc:testimonial", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9d0b07c95e846e19cb3e2277a173595b12d1c18f8130", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("vc:testimonial", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9d0b07c95e846e19cb3e2277a173595b12d1c18f8371", async() => {
             }
             );
             __TestimonialViewComponentTagHelper = CreateTagHelper<global::AspNetCore.Views_AboutUs_Index.__Generated__TestimonialViewComponentTagHelper>();

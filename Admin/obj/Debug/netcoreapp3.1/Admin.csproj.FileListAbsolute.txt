@@ -149,3 +149,6 @@ C:\Users\Administrator\Desktop\AspFinalProject_JotexLive_CodeAcademy\Admin\obj\D
 C:\Users\Administrator\Desktop\AspFinalProject_JotexLive_CodeAcademy\Admin\obj\Debug\netcoreapp3.1\Razor\Views\Faq\Index.cshtml.g.cs
 C:\Users\Administrator\Desktop\AspFinalProject_JotexLive_CodeAcademy\Admin\obj\Debug\netcoreapp3.1\Razor\Views\Faq\Create.cshtml.g.cs
 C:\Users\Administrator\Desktop\AspFinalProject_JotexLive_CodeAcademy\Admin\obj\Debug\netcoreapp3.1\Razor\Views\Faq\Edit.cshtml.g.cs
+C:\Users\Administrator\Desktop\AspFinalProject_JotexLive_CodeAcademy\Admin\obj\Debug\netcoreapp3.1\Razor\Views\Services\Index.cshtml.g.cs
+C:\Users\Administrator\Desktop\AspFinalProject_JotexLive_CodeAcademy\Admin\obj\Debug\netcoreapp3.1\Razor\Views\Services\Edit.cshtml.g.cs
+C:\Users\Administrator\Desktop\AspFinalProject_JotexLive_CodeAcademy\Admin\bin\Debug\netcoreapp3.1\CloudinaryDotNet.dll

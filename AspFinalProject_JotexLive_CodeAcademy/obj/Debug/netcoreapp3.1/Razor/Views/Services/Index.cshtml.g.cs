@@ -26,8 +26,15 @@ using AspFinalProject_JotexLive_CodeAcademy.Models;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 3 "C:\Users\Administrator\Desktop\AspFinalProject_JotexLive_CodeAcademy\AspFinalProject_JotexLive_CodeAcademy\Views\_ViewImports.cshtml"
+using Repository.Services;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"3456965d052b1c7a88f992adab00e37b629b8623", @"/Views/Services/Index.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"8cdf00ea3aab2732c387c7b9e129c9e6bb2cfdff", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"5e9b60d80c3fe471e0bfed5cca7697660907ca3f", @"/Views/_ViewImports.cshtml")]
     public class Views_Services_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         #line hidden
@@ -86,7 +93,7 @@ using AspFinalProject_JotexLive_CodeAcademy.Models;
 <!-- end page-title -->
 <!-- start service-single-section -->
 ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("vc:services", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3456965d052b1c7a88f992adab00e37b629b86234457", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("vc:services", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3456965d052b1c7a88f992adab00e37b629b86234698", async() => {
             }
             );
             __ServicesViewComponentTagHelper = CreateTagHelper<global::AspNetCore.Views_Services_Index.__Generated__ServicesViewComponentTagHelper>();
@@ -99,7 +106,7 @@ using AspFinalProject_JotexLive_CodeAcademy.Models;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n<!-- end service-single-section -->\r\n<!-- start testimonials-section-s2 -->\r\n");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("vc:testimonial", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3456965d052b1c7a88f992adab00e37b629b86235442", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("vc:testimonial", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3456965d052b1c7a88f992adab00e37b629b86235683", async() => {
             }
             );
             __TestimonialViewComponentTagHelper = CreateTagHelper<global::AspNetCore.Views_Services_Index.__Generated__TestimonialViewComponentTagHelper>();

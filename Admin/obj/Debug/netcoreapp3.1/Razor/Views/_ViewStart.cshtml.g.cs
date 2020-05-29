@@ -40,8 +40,22 @@ using Admin.Models.Pages;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 5 "C:\Users\Administrator\Desktop\AspFinalProject_JotexLive_CodeAcademy\Admin\Views\_ViewImports.cshtml"
+using Admin.Models.Services;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 6 "C:\Users\Administrator\Desktop\AspFinalProject_JotexLive_CodeAcademy\Admin\Views\_ViewImports.cshtml"
+using Repository.Services;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"7091c65830b0329e613be026ede8a57552863778", @"/Views/_ViewStart.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"03bdedf1cf89f5278126578b3f821318950297ff", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"2b32916835e750cd9cf26dfbd3d2440910a8757c", @"/Views/_ViewImports.cshtml")]
     public class Views__ViewStart : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         #pragma warning disable 1998

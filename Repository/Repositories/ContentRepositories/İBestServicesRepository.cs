@@ -12,5 +12,8 @@ namespace Repository.Repositories.ContentRepositories
 
         void PostBlogComment(BlogComment comment);
         IEnumerable<Service> getServices();
+        Service getServiceById(int id);
+        void UpdateServise(Service serviseToUpdate, Service model);
+        void DeleteServise(Service service);
     }
 }

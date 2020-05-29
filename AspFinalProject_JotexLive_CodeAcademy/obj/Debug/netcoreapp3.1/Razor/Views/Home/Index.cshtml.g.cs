@@ -26,8 +26,15 @@ using AspFinalProject_JotexLive_CodeAcademy.Models;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 3 "C:\Users\Administrator\Desktop\AspFinalProject_JotexLive_CodeAcademy\AspFinalProject_JotexLive_CodeAcademy\Views\_ViewImports.cshtml"
+using Repository.Services;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"b3e6aedc2a98eb2ffc491980b1a1d13cd9abd06b", @"/Views/Home/Index.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"8cdf00ea3aab2732c387c7b9e129c9e6bb2cfdff", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"5e9b60d80c3fe471e0bfed5cca7697660907ca3f", @"/Views/_ViewImports.cshtml")]
     public class Views_Home_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         #line hidden
@@ -89,7 +96,7 @@ using AspFinalProject_JotexLive_CodeAcademy.Models;
     </div>
     <div class=""swiper-container"">
         ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("vc:slider", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b3e6aedc2a98eb2ffc491980b1a1d13cd9abd06b5177", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("vc:slider", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b3e6aedc2a98eb2ffc491980b1a1d13cd9abd06b5418", async() => {
             }
             );
             __SliderViewComponentTagHelper = CreateTagHelper<global::AspNetCore.Views_Home_Index.__Generated__SliderViewComponentTagHelper>();
@@ -117,7 +124,7 @@ using AspFinalProject_JotexLive_CodeAcademy.Models;
         <div class=""row"">
             <div class=""col col-xs-12"">
                 ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("vc:about-us-home", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b3e6aedc2a98eb2ffc491980b1a1d13cd9abd06b6565", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("vc:about-us-home", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b3e6aedc2a98eb2ffc491980b1a1d13cd9abd06b6806", async() => {
             }
             );
             __AboutUsHomeViewComponentTagHelper = CreateTagHelper<global::AspNetCore.Views_Home_Index.__Generated__AboutUsHomeViewComponentTagHelper>();
@@ -130,7 +137,7 @@ using AspFinalProject_JotexLive_CodeAcademy.Models;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n                ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("vc:fun-facts", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b3e6aedc2a98eb2ffc491980b1a1d13cd9abd06b7495", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("vc:fun-facts", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b3e6aedc2a98eb2ffc491980b1a1d13cd9abd06b7736", async() => {
             }
             );
             __FunFactsViewComponentTagHelper = CreateTagHelper<global::AspNetCore.Views_Home_Index.__Generated__FunFactsViewComponentTagHelper>();
@@ -160,7 +167,7 @@ using AspFinalProject_JotexLive_CodeAcademy.Models;
             </div>
             <div class=""col col-xs-12"">
                 ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("vc:best-services", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b3e6aedc2a98eb2ffc491980b1a1d13cd9abd06b9040", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("vc:best-services", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b3e6aedc2a98eb2ffc491980b1a1d13cd9abd06b9281", async() => {
             }
             );
             __BestServicesViewComponentTagHelper = CreateTagHelper<global::AspNetCore.Views_Home_Index.__Generated__BestServicesViewComponentTagHelper>();
@@ -173,7 +180,7 @@ using AspFinalProject_JotexLive_CodeAcademy.Models;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n            </div>\r\n        </div>\r\n    </div> <!-- end container -->\r\n</section>\r\n<!-- end service-section-s2 -->\r\n<!-- start cta-section-s2 -->\r\n<section class=\"cta-section-s2 section-padding\">\r\n    ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("vc:likeable-area", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b3e6aedc2a98eb2ffc491980b1a1d13cd9abd06b10174", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("vc:likeable-area", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b3e6aedc2a98eb2ffc491980b1a1d13cd9abd06b10415", async() => {
             }
             );
             __LikeableAreaViewComponentTagHelper = CreateTagHelper<global::AspNetCore.Views_Home_Index.__Generated__LikeableAreaViewComponentTagHelper>();
@@ -186,7 +193,7 @@ using AspFinalProject_JotexLive_CodeAcademy.Models;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n</section>\r\n<!-- end cta-section-s2 -->\r\n<!-- start claim-statement-section -->\r\n<section class=\"claim-statement-section section-padding\">\r\n    ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("vc:claim-settlement", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b3e6aedc2a98eb2ffc491980b1a1d13cd9abd06b11246", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("vc:claim-settlement", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b3e6aedc2a98eb2ffc491980b1a1d13cd9abd06b11487", async() => {
             }
             );
             __ClaimSettlementViewComponentTagHelper = CreateTagHelper<global::AspNetCore.Views_Home_Index.__Generated__ClaimSettlementViewComponentTagHelper>();
@@ -199,7 +206,7 @@ using AspFinalProject_JotexLive_CodeAcademy.Models;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n</section>\r\n<!-- end claim-statement-section -->\r\n<!-- start testimonials-section-s2 -->\r\n");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("vc:testimonial", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b3e6aedc2a98eb2ffc491980b1a1d13cd9abd06b12272", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("vc:testimonial", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b3e6aedc2a98eb2ffc491980b1a1d13cd9abd06b12513", async() => {
             }
             );
             __TestimonialViewComponentTagHelper = CreateTagHelper<global::AspNetCore.Views_Home_Index.__Generated__TestimonialViewComponentTagHelper>();
@@ -212,7 +219,7 @@ using AspFinalProject_JotexLive_CodeAcademy.Models;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n<!-- end testimonials-section-s2 -->\r\n<!-- start award-section -->\r\n");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("vc:award", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b3e6aedc2a98eb2ffc491980b1a1d13cd9abd06b13257", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("vc:award", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b3e6aedc2a98eb2ffc491980b1a1d13cd9abd06b13498", async() => {
             }
             );
             __AwardViewComponentTagHelper = CreateTagHelper<global::AspNetCore.Views_Home_Index.__Generated__AwardViewComponentTagHelper>();
@@ -225,7 +232,7 @@ using AspFinalProject_JotexLive_CodeAcademy.Models;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n<!-- end award-section -->\r\n<!-- start blog-section-s2 -->\r\n<section class=\"blog-section-s2 section-padding\">\r\n    <div class=\"container\">\r\n        <div class=\"row\">\r\n            <div class=\"col col-xs-12\">\r\n                ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("vc:home-blog", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b3e6aedc2a98eb2ffc491980b1a1d13cd9abd06b14390", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("vc:home-blog", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b3e6aedc2a98eb2ffc491980b1a1d13cd9abd06b14631", async() => {
             }
             );
             __HomeBlogViewComponentTagHelper = CreateTagHelper<global::AspNetCore.Views_Home_Index.__Generated__HomeBlogViewComponentTagHelper>();
