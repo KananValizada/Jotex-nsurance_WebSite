@@ -1,0 +1,109 @@
+﻿@model AboutUsViewModel
+@{
+    ViewData["Title"] = "Create";
+}
+
+<!-- Begin Page Content -->
+<!-- Begin Page Content -->
+<div class="container-fluid">
+
+    <!-- Page Heading -->
+    <h1 class="h3 mb-2 text-gray-800">Yeni</h1>
+
+    <!-- DataTales Example -->
+    <div class="card shadow mb-4">
+        <div class="card-body">
+            <form method="post" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label>Vəziyyəti</label>
+                    <div class="custom-control custom-radio custom-control-inline ml-3">
+                        <input type="checkbox" asp-for="Status" class="custom-control-input">
+                        <label class="custom-control-label" asp-for="Status">Aktiv</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Title">Başlıq</label>
+                    <input class="form-control form-control-user slug-source" asp-for="Title">
+                    <span class="field-validation-valid text-danger" asp-validation-for="Title"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="SubTitle">Sub Başlıq</label>
+                    <input class="form-control form-control-user slug-source" asp-for="SubTitle">
+                    <span class="field-validation-valid text-danger" asp-validation-for="SubTitle"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Text">Mətn</label>
+                    <input class="form-control form-control-user slug-source" asp-for="Text">
+                    <span class="field-validation-valid text-danger" asp-validation-for="Text"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="About">Haqqimizda</label>
+                    <textarea class="form-control form-control-user slug-source" asp-for="About"></textarea>
+                    <span class="field-validation-valid text-danger" asp-validation-for="About"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="PolicyCount">İş sayı</label>
+                    <input type="number" class="form-control form-control-user slug-source" asp-for="PolicyCount">
+                    <span class="field-validation-valid text-danger" asp-validation-for="PolicyCount"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="PolicyText">İş mətni</label>
+                    <input class="form-control form-control-user slug-source" asp-for="PolicyText">
+                    <span class="field-validation-valid text-danger" asp-validation-for="PolicyText"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="ClaimPercent">Təsdiq faizi</label>
+                    <input type="number" class="form-control form-control-user slug-source" asp-for="ClaimPercent">
+                    <span class="field-validation-valid text-danger" asp-validation-for="ClaimPercent"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="ClaimText">Təsdiq mətni</label>
+                    <input class="form-control form-control-user slug-source" asp-for="ClaimText">
+                    <span class="field-validation-valid text-danger" asp-validation-for="ClaimText"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="OfficeCount">Ofis sayı</label>
+                    <input type="number" class="form-control form-control-user slug-source" asp-for="OfficeCount">
+                    <span class="field-validation-valid text-danger" asp-validation-for="OfficeCount"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="OfficeText">Ofis mətni</label>
+                    <input class="form-control form-control-user slug-source" asp-for="OfficeText">
+                    <span class="field-validation-valid text-danger" asp-validation-for="OfficeText"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="OfficeActionText">Button mətni</label>
+                    <input class="form-control form-control-user slug-source" asp-for="OfficeActionText">
+                    <span class="field-validation-valid text-danger" asp-validation-for="OfficeActionText"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="SettingsId">Parametr ID-si</label>
+                    <select asp-for="SettingsId">
+                        <option selected disabled>Seçin</option>
+
+                        <option value="@ViewBag.Settings.Id">@ViewBag.Settings.Id</option>
+                    </select>
+                    <span class="field-validation-valid" asp-validation-for="SettingsId"></span>
+                </div>
+                <div class="form-group d-flex justify-content-end mt-3">
+                    <button type="submit" class="btn btn-primary btn-icon-split">
+                        <span class="icon text-white-50">
+                            <i class="fas fa-pencil-alt"></i>
+                        </span>
+                        <span class="text">Yarat</span>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</div>
+<!-- /.container-fluid -->
+
+@section Scripts{
+    <script src="~/lib/jquery-validate/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+
+}
+

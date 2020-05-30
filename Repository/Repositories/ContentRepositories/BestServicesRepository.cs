@@ -16,6 +16,15 @@ namespace Repository.Repositories.ContentRepositories
             _context = context;
         }
 
+        public Service CreateService(Service model)
+        {
+            model.CreatedAt = DateTime.Now;
+            model.EndPoint = "#";
+            _context.Services.Add(model);
+            _context.SaveChanges();
+            return model;
+        }
+
         public void DeleteServise(Service service)
         {
             _context.Services.Remove(service);
@@ -29,7 +38,9 @@ namespace Repository.Repositories.ContentRepositories
                                     .Include("Agents.CaseStudies") 
                                     .Include("ServiceSpecs")
                                     .Include("ServiceFeatures")
-                                    .Include("Blogs.BlogImages").Where(s => s.Status).Take(count).ToList();
+                                    .Include("Blogs.BlogImages")
+                                    .Include("Blogs.BlogComments")
+                                    .Include("Blogs.BlogSlogans").Where(s => s.Status).Take(count).ToList();
         }
 
         public IEnumerable<Blog> GetBlogById(int Id)

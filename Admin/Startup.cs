@@ -42,6 +42,12 @@ namespace Admin
             services.AddTransient<IBestServicesRepository, BestServicesRepository>();
             services.AddTransient<ICloudinaryService, CloudinaryService>();
             services.AddTransient<IFileManager, FileManager>();
+            services.AddTransient<IAboutUsRepository, AboutUsRepository>();
+            services.AddTransient<IBlogRepository, BlogRepository>();
+            services.AddTransient<IBlogPhotosRepository, BlogPhotosRepository>();
+            services.AddTransient<IBlogCommentsRepository, BlogCommentsRepository>();
+            services.AddTransient<IBlogSloganRepository, BlogSloganRepository>();
+            services.AddTransient<IAboutUsRepository, AboutUsRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -40,6 +40,24 @@ namespace Admin.Controllers
 
             return View(model);
         }
+        public IActionResult Create()
+        {
+
+            return View();
+        }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Create(ServiceViewModel service)
+        {
+            if (ModelState.IsValid)
+            {
+                Service model = _mapper.Map<ServiceViewModel, Service>(service);
+                model.CreatedBy = _admin.FullName;
+                _servicesRepository.CreateService(model);
+                return RedirectToAction("index");
+            }
+            return View(service);
+        }
         public IActionResult Edit(int Id)
         {
             var model = _servicesRepository.getServiceById(Id);

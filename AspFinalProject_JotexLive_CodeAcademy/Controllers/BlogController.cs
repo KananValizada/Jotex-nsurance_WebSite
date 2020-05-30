@@ -30,7 +30,6 @@ namespace AspFinalProject_JotexLive_CodeAcademy.Controllers
                 if (blog == null) return NotFound();
 
             var model = _mapper.Map<Blog,BlogViewModel>(blog);
-            
             return View(model);
         }
         [HttpPost]

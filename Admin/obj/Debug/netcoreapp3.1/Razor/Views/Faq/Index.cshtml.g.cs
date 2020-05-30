@@ -49,13 +49,20 @@ using Admin.Models.Services;
 #nullable disable
 #nullable restore
 #line 6 "C:\Users\Administrator\Desktop\AspFinalProject_JotexLive_CodeAcademy\Admin\Views\_ViewImports.cshtml"
+using Admin.Models.Blog;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 7 "C:\Users\Administrator\Desktop\AspFinalProject_JotexLive_CodeAcademy\Admin\Views\_ViewImports.cshtml"
 using Repository.Services;
 
 #line default
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"7561be57e4aca62224246e7f342e8f6d72a42c99", @"/Views/Faq/Index.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"2b32916835e750cd9cf26dfbd3d2440910a8757c", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"e512b30234e6af294e17ec9f0a93f15d032615bb", @"/Views/_ViewImports.cshtml")]
     public class Views_Faq_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<IEnumerable<FagViewModel>>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("asp-action", "create", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -107,7 +114,7 @@ using Repository.Services;
     <div class=""card shadow mb-4"">
         <div class=""card-header py-3"">
             ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7561be57e4aca62224246e7f342e8f6d72a42c996475", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7561be57e4aca62224246e7f342e8f6d72a42c996682", async() => {
                 WriteLiteral("Yeni Faq");
             }
             );
@@ -200,7 +207,7 @@ using Repository.Services;
 #line hidden
 #nullable disable
             WriteLiteral("</td>\r\n                            <td>\r\n                                ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7561be57e4aca62224246e7f342e8f6d72a42c9910730", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7561be57e4aca62224246e7f342e8f6d72a42c9910937", async() => {
                 WriteLiteral("\r\n                                    <i class=\"fas fa-pencil-alt\"></i>\r\n                                ");
             }
             );
@@ -232,7 +239,7 @@ using Repository.Services;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n                            </td>\r\n                            <td>\r\n                                ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7561be57e4aca62224246e7f342e8f6d72a42c9913246", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7561be57e4aca62224246e7f342e8f6d72a42c9913453", async() => {
                 WriteLiteral("\r\n                                    <i class=\"fas fa-trash\"></i>\r\n                                ");
             }
             );

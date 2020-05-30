@@ -1,4 +1,6 @@
-﻿using Admin.Models.Pages;
+﻿using Admin.Models.Account;
+using Admin.Models.Blog;
+using Admin.Models.Pages;
 using Admin.Models.Services;
 using AutoMapper;
 using Repository.Models;
@@ -17,6 +19,19 @@ namespace Admin.Mapping
             CreateMap<FagViewModel, Fag>();
             CreateMap<Service, ServiceViewModel>();
             CreateMap<ServiceViewModel, Service>();
+            CreateMap<Settings, SettingsViewModel>();
+            CreateMap<SettingsViewModel,Settings>();
+            CreateMap<Blog, BlogViewModel>();
+            CreateMap<BlogViewModel, Blog>();
+            CreateMap<BlogImage, BlogImageViewModel>();
+            CreateMap<BlogImageViewModel, BlogImage>();
+            CreateMap<BlogComment, BlogCommentViewModel>();
+            CreateMap<BlogCommentViewModel, BlogComment>();
+            CreateMap<BlogSlogan, BlogSloganViewModel>();
+            CreateMap<BlogSloganViewModel,BlogSlogan>();
+            CreateMap<AboutUs, AboutUsViewModel>();
+            CreateMap<AboutUsViewModel, AboutUs>();
+
         }
     }
 }

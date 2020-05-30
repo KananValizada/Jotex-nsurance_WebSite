@@ -1,4 +1,5 @@
 ﻿@model IEnumerable<BestServicesViewModel>
+@inject ICloudinaryService _cloudinaryServise
 
 @foreach (var item in Model)
 {
@@ -7,7 +8,7 @@
             <div class="grid-item">
                 <div class="post format-standard-image">
                     <div class="entry-media">
-                        <img src="images/blog/@blog.BlogImages[0].Image" alt="@blog.BlogImages[0].Image">
+                        <img src="@_cloudinaryServise.BuildUrl(blog.BlogImages[0].Image)" alt="@blog.BlogImages[0].Image">
                     </div>
                     <ul class="entry-meta">
                         <li><a href="#"><i class="@item.Logo"></i> @item.Name, şirkət</a></li>

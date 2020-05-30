@@ -24,7 +24,6 @@ namespace AspFinalProject_JotexLive_CodeAcademy.ViewComponents
             var bestServices = _bestServicesRepository.getBestServices(100);
 
             var model = _mapper.Map<IEnumerable<Service>, IEnumerable<BestServicesViewModel>>(bestServices);
-
             return View(model);
         }
     }

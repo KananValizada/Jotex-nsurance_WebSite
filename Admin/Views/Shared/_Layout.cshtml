@@ -84,7 +84,6 @@
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Əsas Səhifələr:</h6>
                         <a class="collapse-item" asp-controller="aboutus" asp-action="index">Haqqımızda</a>
-                        <a class="collapse-item" asp-controller="blog" asp-action="index">Blog</a>
                         <a class="collapse-item" asp-controller="casestudies" asp-action="index">Nümunəvi Təcrübələr</a>
                         <div class="collapse-divider"></div>
                         <h6 class="collapse-header">Digər səhifələr:</h6>
@@ -93,12 +92,29 @@
                     </div>
                 </div>
             </li>
+            <!-- Nav Item - Pages Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseBlog" aria-expanded="true" aria-controls="collapsePages">
+                    <i class="fas fa-fw fa-folder"></i>
+                    <span>Blog</span>
+                </a>
+                <div id="collapseBlog" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <a class="collapse-item" asp-controller="blog" asp-action="index">Blog</a>
+                        <a class="collapse-item" asp-controller="blogcomments" asp-action="index">Blog Şərhləri</a>
+                        <a class="collapse-item" asp-controller="blogphotos" asp-action="index">Blog Şəkilləri</a>
+                        <a class="collapse-item" asp-controller="blogslogan" asp-action="index">Blog Sloqanları</a>
+
+                        <div class="collapse-divider"></div>
+                    </div>
+                </div>
+            </li>
 
             <!-- Nav Item - Charts -->
             <li class="nav-item">
-                <a class="nav-link" href="charts.html">
+                <a class="nav-link" asp-controller="setting" asp-action="index">
                     <i class="fas fa-fw fa-chart-area"></i>
-                    <span>Charts</span>
+                    <span>Parametrlər</span>
                 </a>
             </li>
 

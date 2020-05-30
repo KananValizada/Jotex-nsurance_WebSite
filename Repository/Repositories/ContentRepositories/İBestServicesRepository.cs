@@ -15,5 +15,6 @@ namespace Repository.Repositories.ContentRepositories
         Service getServiceById(int id);
         void UpdateServise(Service serviseToUpdate, Service model);
         void DeleteServise(Service service);
+        Service CreateService(Service model);
     }
 }

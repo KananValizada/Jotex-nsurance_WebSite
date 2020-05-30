@@ -1,4 +1,5 @@
 ﻿@model BlogViewModel
+@inject ICloudinaryService _cloudinaryService
 @{
     ViewData["Title"] = "Detailed";
 }
@@ -29,7 +30,7 @@
                 <div class="blog-content">
                     <div class="post format-standard-image">
                         <div class="entry-media">
-                            <img src="~/images/blog/@Model.BlogImages[0].Image" alt="">
+                            <img src="@_cloudinaryService.BuildUrl(Model.BlogImages[0].Image)" alt="">
                         </div>
                         <ul class="entry-meta">
                             <li><a href="#"><i class="fi flaticon-user"></i>İdarəçi</a></li>
@@ -61,7 +62,7 @@
 
                     <div class="author-box">
                         <div class="author-avatar">
-                            <a href="#" target="_blank"><img src="~/images/blog-details/@Model.BlogSlogans[1].Image" alt=""></a>
+                            <a href="#" target="_blank"><img src="images/blog-details/comments-author/img-4.jpg" alt=""></a>
                         </div>
                         <div class="author-content">
                             <a href="#" class="author-name">@Model.BlogSlogans[1].Name</a>
@@ -93,51 +94,55 @@
                     </div>
 
                     <div class="comments-area">
-                        <div class="comments-section">
-                            <h3 class="comments-title">@Model.BlogComments.Count Comments</h3>
-                            <ol class="comments">
-                                @foreach (var item in Model.BlogComments)
-                                {
-                                <li class="comment">
-                                    <div>
-                                        <div class="comment-theme">
-                                            <div class="comment-image"><img src="images/blog-details/comments-author/img-4.jpg" alt=""></div>
-                                        </div>
-                                        <div class="comment-main-area">
-                                            <div class="comment-wrapper">
-                                                <div class="comments-meta">
-                                                    <h4>@item.Name<span class="comments-date">says at @item.ModifiedAt</span></h4>
+                        @if (Model.BlogComments.Count != 0)
+                        {
+                            <div class="comments-section">
+                                <h3 class="comments-title">@Model.BlogComments.Count Comments</h3>
+                                <ol class="comments">
+                                    @foreach (var item in Model.BlogComments)
+                                    {
+                                        <li class="comment">
+                                            <div>
+                                                <div class="comment-theme">
+                                                    <div class="comment-image"><img src="images/blog-details/comments-author/img-4.jpg" alt=""></div>
                                                 </div>
-                                                <div class="comment-area">
-                                                    <p>@item.Text</p>
-                                                    <div class="comments-reply">
-                                                        <a class="comment-reply-link" href="#"><span>Reply</span></a>
+                                                <div class="comment-main-area">
+                                                    <div class="comment-wrapper">
+                                                        <div class="comments-meta">
+                                                            <h4>@item.Name<span class="comments-date">says at @item.ModifiedAt</span></h4>
+                                                        </div>
+                                                        <div class="comment-area">
+                                                            <p>@item.Text</p>
+                                                            <div class="comments-reply">
+                                                                <a class="comment-reply-link" href="#"><span>Reply</span></a>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                }
-                                
-                            </ol>
-                        </div> <!-- end comments-section -->
+                                        </li>
+                                    }
 
-                        <div class="comment-respond">
-                            <h3 class="comment-reply-title">Komentinizi daxil edin</h3>
-                            <form method="post" id="commentform" class="comment-form" asp-controller="Blog" asp-action="Detailed" >
-                                <input asp-for="BlogComments[0].BlogId" type="hidden" value="@Model.Id" />
-                                <div class="form-textarea" >
-                                    <textarea id="comment" asp-for="BlogComments[0].Text" placeholder="Kommentariya yazın..."></textarea>
-                                </div>
-                                <div class="form-inputs">
-                                    <input asp-for="BlogComments[0].Name" placeholder="Name" type="text">
-                                </div>
-                                <div class="form-submit">
-                                    <input id="submit" value="Post Comment" type="submit">
-                                </div>
-                            </form>
-                        </div>
+                                </ol>
+                            </div> <!-- end comments-section -->
+
+                            <div class="comment-respond">
+                                <h3 class="comment-reply-title">Komentinizi daxil edin</h3>
+                                <form method="post" id="commentform" class="comment-form" asp-controller="Blog" asp-action="Detailed">
+                                    <input asp-for="BlogComments[0].BlogId" type="hidden" value="@Model.Id" />
+                                    <div class="form-textarea">
+                                        <textarea id="comment" asp-for="BlogComments[0].Text" placeholder="Kommentariya yazın..."></textarea>
+                                    </div>
+                                    <div class="form-inputs">
+                                        <input asp-for="BlogComments[0].Name" placeholder="Name" type="text">
+                                    </div>
+                                    <div class="form-submit">
+                                        <input id="submit" value="Post Comment" type="submit">
+                                    </div>
+                                </form>
+                            </div>
+                        }
+
                     </div> <!-- end comments-area -->
                 </div>
             </div>
