@@ -9,10 +9,10 @@ namespace Repository.Models
     {
         [Required]
         public int BlogId { get; set; }
-        [Required]
+        [Required(ErrorMessage ="Ad Vacibdir")]
         [MaxLength(100)]
         public string Name { get; set; }
-        [Required]
+        [Required(ErrorMessage = "Yazi Vacibdir")]
         [MaxLength(500)]
         public string Text { get; set; }
         [Required]

@@ -13,7 +13,7 @@
                     <div class="col col-xs-12">
                         <h2>@Model.Title</h2>
                         <ol class="breadcrumb">
-                            <li><a href="index.html">Home</a></li>
+                            <li><a asp-controller="home" asp-action="index">Home</a></li>
                             <li>Blog</li>
                         </ol>
                     </div>
@@ -48,7 +48,7 @@
                     </div>
 
                     <div class="tag-share clearfix">
-                  
+
                         <div class="share">
                             <span>Share: </span>
                             <ul>
@@ -126,15 +126,19 @@
                                 </ol>
                             </div> <!-- end comments-section -->
 
+                            Model.BlogComments[0].Text = "";
+                            Model.BlogComments[0].Name = "";
                             <div class="comment-respond">
                                 <h3 class="comment-reply-title">Komentinizi daxil edin</h3>
                                 <form method="post" id="commentform" class="comment-form" asp-controller="Blog" asp-action="Detailed">
                                     <input asp-for="BlogComments[0].BlogId" type="hidden" value="@Model.Id" />
                                     <div class="form-textarea">
                                         <textarea id="comment" asp-for="BlogComments[0].Text" placeholder="Kommentariya yazın..."></textarea>
+                                        <span class="field-validation-valid text-danger" asp-validation-for="BlogComments[0].Text"></span>
                                     </div>
                                     <div class="form-inputs">
                                         <input asp-for="BlogComments[0].Name" placeholder="Name" type="text">
+                                        <span class="field-validation-valid text-danger" asp-validation-for="BlogComments[0].Name"></span>
                                     </div>
                                     <div class="form-submit">
                                         <input id="submit" value="Post Comment" type="submit">
@@ -149,3 +153,8 @@
         </div>
     </div> <!-- end container -->
 </section>
+
+@section Scripts{
+    <script src="~/js/jquery-validate/jquery.validate.min.js"></script>
+    <script src="~/js/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+}

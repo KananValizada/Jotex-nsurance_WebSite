@@ -4,6 +4,7 @@ using Admin.Models.Pages;
 using Admin.Models.Services;
 using AutoMapper;
 using Repository.Models;
+using Repository.Repositories.ContentRepositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -31,6 +32,12 @@ namespace Admin.Mapping
             CreateMap<BlogSloganViewModel,BlogSlogan>();
             CreateMap<AboutUs, AboutUsViewModel>();
             CreateMap<AboutUsViewModel, AboutUs>();
+            CreateMap<TestimonialVieModel, Testimonial>();
+            CreateMap<Testimonial, TestimonialVieModel>();
+            CreateMap<Agent, AgentViewModel>();
+            CreateMap<AgentViewModel, Agent>();
+            CreateMap<CaseStudy, CaseStudyViewModel>();
+            CreateMap<CaseStudyViewModel,CaseStudy>();
 
         }
     }

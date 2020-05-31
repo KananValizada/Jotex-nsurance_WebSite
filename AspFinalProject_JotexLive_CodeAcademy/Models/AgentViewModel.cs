@@ -8,6 +8,7 @@ namespace AspFinalProject_JotexLive_CodeAcademy.Models
     public class AgentViewModel
     {
 
+        public int Id { get; set; }
         public string Name { get; set; }
 
         public string Profession { get; set; }

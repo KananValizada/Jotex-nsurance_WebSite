@@ -171,3 +171,12 @@ C:\Users\Administrator\Desktop\AspFinalProject_JotexLive_CodeAcademy\Admin\obj\D
 C:\Users\Administrator\Desktop\AspFinalProject_JotexLive_CodeAcademy\Admin\obj\Debug\netcoreapp3.1\Razor\Views\AboutUs\Index.cshtml.g.cs
 C:\Users\Administrator\Desktop\AspFinalProject_JotexLive_CodeAcademy\Admin\obj\Debug\netcoreapp3.1\Razor\Views\AboutUs\Create.cshtml.g.cs
 C:\Users\Administrator\Desktop\AspFinalProject_JotexLive_CodeAcademy\Admin\obj\Debug\netcoreapp3.1\Razor\Views\AboutUs\Edit.cshtml.g.cs
+C:\Users\Administrator\Desktop\AspFinalProject_JotexLive_CodeAcademy\Admin\obj\Debug\netcoreapp3.1\Razor\Views\Testimonial\Index.cshtml.g.cs
+C:\Users\Administrator\Desktop\AspFinalProject_JotexLive_CodeAcademy\Admin\obj\Debug\netcoreapp3.1\Razor\Views\Testimonial\Create.cshtml.g.cs
+C:\Users\Administrator\Desktop\AspFinalProject_JotexLive_CodeAcademy\Admin\obj\Debug\netcoreapp3.1\Razor\Views\Testimonial\Edit.cshtml.g.cs
+C:\Users\Administrator\Desktop\AspFinalProject_JotexLive_CodeAcademy\Admin\obj\Debug\netcoreapp3.1\Razor\Views\Agent\Index.cshtml.g.cs
+C:\Users\Administrator\Desktop\AspFinalProject_JotexLive_CodeAcademy\Admin\obj\Debug\netcoreapp3.1\Razor\Views\Agent\Create.cshtml.g.cs
+C:\Users\Administrator\Desktop\AspFinalProject_JotexLive_CodeAcademy\Admin\obj\Debug\netcoreapp3.1\Razor\Views\Agent\Edit.cshtml.g.cs
+C:\Users\Administrator\Desktop\AspFinalProject_JotexLive_CodeAcademy\Admin\obj\Debug\netcoreapp3.1\Razor\Views\CaseStudies\Create.cshtml.g.cs
+C:\Users\Administrator\Desktop\AspFinalProject_JotexLive_CodeAcademy\Admin\obj\Debug\netcoreapp3.1\Razor\Views\CaseStudies\Edit.cshtml.g.cs
+C:\Users\Administrator\Desktop\AspFinalProject_JotexLive_CodeAcademy\Admin\obj\Debug\netcoreapp3.1\Razor\Views\CaseStudies\Index.cshtml.g.cs

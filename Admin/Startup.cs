@@ -48,6 +48,9 @@ namespace Admin
             services.AddTransient<IBlogCommentsRepository, BlogCommentsRepository>();
             services.AddTransient<IBlogSloganRepository, BlogSloganRepository>();
             services.AddTransient<IAboutUsRepository, AboutUsRepository>();
+            services.AddTransient<ITestimonialRepository, TestimonialRepository>();
+            services.AddTransient<IAgentRepository, AgentRepository>();
+            services.AddTransient<ICaseStudyRepository, CaseStudyRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

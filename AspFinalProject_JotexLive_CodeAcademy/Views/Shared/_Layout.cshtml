@@ -64,11 +64,11 @@
                         <div class="left-separator"></div>
                         <button class="close-navbar"><i class="ti-close"></i></button>
                         <ul class="nav navbar-nav">
-                            <li class="menu-item-has-children" >
-                                <a  asp-controller="home" asp-action="index">Ana Səhifə</a>
+                            <li class="menu-item-has-children">
+                                <a asp-controller="home" asp-action="index">Ana Səhifə</a>
                             </li>
                             <li class="menu-item-has-children">
-                                <a  asp-controller="services" asp-action="index">Xidmətlər</a>
+                                <a asp-controller="services" asp-action="index">Xidmətlər</a>
                             </li>
                             <li class="menu-item-has-children">
                                 <a asp-controller="casestudies" asp-action="index">Nümunəvi araşdırmalar</a>
@@ -96,7 +96,7 @@
                             <div class="header-search-form">
                                 <form class="form">
                                     <div>
-                                        <input type="text" class="form-control" placeholder="Axtarış et"/>
+                                        <input type="text" class="form-control" placeholder="Axtarış et" />
                                     </div>
                                     <button type="submit" class="btn"><i class="ti-search"></i></button>
                                 </form>
@@ -208,6 +208,7 @@
 
     <!-- Plugins for this template -->
     <script src="~/js/jquery-plugin-collection.js"></script>
+    @RenderSection("Scripts", required: false)
 
     <!-- Custom script for this template -->
     <script src="~/js/script.js" asp-append-version="true"></script>

@@ -69,7 +69,7 @@ namespace Admin.Controllers
                 _aboutUsRepository.UpdateAboutUs(AboutUsToUpdate, model);
                 return RedirectToAction("index");
             }
-            return View(abs);
+            return Ok(abs);
         }
         public IActionResult Delete(int id)
         {

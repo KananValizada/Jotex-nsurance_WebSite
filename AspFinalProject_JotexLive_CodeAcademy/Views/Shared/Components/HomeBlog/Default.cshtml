@@ -1,63 +1,64 @@
 ﻿@model IEnumerable<BestServicesViewModel>
+@inject ICloudinaryService _cloudinaryServise
 @{ var a = 0; }
-    <div class="content-area">
-        <div class="left-col">
-            <div class="section-title-s3">
-                <span>Bizim Blogdan</span>
-            </div>
-            @foreach (var item in Model)
+<div class="content-area">
+    <div class="left-col">
+        <div class="section-title-s3">
+            <span>Bizim Blogdan</span>
+        </div>
+        @foreach (var item in Model)
+        {
+            @foreach (var blog in item.Blogs)
             {
-                @foreach (var blog in item.Blogs)
-                {
-                    <h2>@blog.Title</h2>
-                    <p>@blog.Text</p>
-                    <div class="blog-post-w-media post">
-                        <div class="entry-media">
-                            @foreach (var image in blog.BlogImages)
-                            {
-                                <img src="images/blog/@image.Image" alt="@image.Image">
-                            }
+                <h2>@blog.Title</h2>
+                <p>@blog.Text</p>
+                <div class="blog-post-w-media post">
+                    <div class="entry-media">
+                        @foreach (var image in blog.BlogImages)
+                        {
+                            <img src="@_cloudinaryServise.BuildUrl(image.Image)" alt="@image.Image">
+                        }
 
-                        </div>
-                        <p class="cat"><i class="fi flaticon-tag-1"></i>@item.Name , company</p>
-
-                        <h3><a href="#"></a>@blog.Subtitle</h3>
-                        <p class="text">@blog.Subtext</p>
-                        <a href="#" class="theme-btn">@blog.ActionText</a>
                     </div>
-                    break;
-                }
+                    <p class="cat"><i class="fi flaticon-tag-1"></i>@item.Name , company</p>
 
+                    <h3><a href="#"></a>@blog.Subtitle</h3>
+                    <p class="text">@blog.Subtext</p>
+                    <a asp-controller="blog" asp-action="index" class="theme-btn">@blog.ActionText</a>
+                </div>
                 break;
             }
 
-        </div>
-        <div class="right-col">
+            break;
+        }
+
+    </div>
+    <div class="right-col">
 
 
-            @foreach (var item in Model)
+        @foreach (var item in Model)
+        {
+            a++;
+            if (a == 1)
             {
-                a++;
-                if (a == 1)
-                {
-                    continue;
-                }
+                continue;
+            }
             <div class="post">
                 <p class="cat"><i class="fi flaticon-tag-1"></i>@item.Name , company</p>
                 @foreach (var blog in item.Blogs)
                 {
                     <h3><a href="#"></a>@blog.Title</h3>
                     <p class="text">@blog.Text</p>
-                    <a href="#" class="read-more">@blog.ActionText</a>
+                    <a asp-controller="blog" asp-action="index" class="read-more">@blog.ActionText</a>
 
                 }
             </div>
-                if (a == 4)
-                {
-                    break;
-                }
+            if (a == 4)
+            {
+                break;
             }
-                
-            </div>
+        }
 
     </div>
+
+</div>

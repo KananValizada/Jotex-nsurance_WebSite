@@ -5,7 +5,7 @@
         @foreach (var item in Model)
         {
             <div class="grid">
-                <a href="@item.EndPoint">
+                <a asp-controller="services" asp-action="index">
                     <i class="@item.Logo"></i>
                     <h3>@item.Name</h3>
                 </a>

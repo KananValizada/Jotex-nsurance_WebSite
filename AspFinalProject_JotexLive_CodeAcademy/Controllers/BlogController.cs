@@ -36,6 +36,7 @@ namespace AspFinalProject_JotexLive_CodeAcademy.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult Detailed(BlogViewModel Comment)
         {
+
             BlogComment blogComment = new BlogComment
             {
                 ModifiedAt = DateTime.Now,
